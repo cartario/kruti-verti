@@ -1,0 +1,36 @@
+.info-mh-block{
+  margin-top: 60px;
+
+  h2{
+    font-size: 52px;
+    color: #FD6C21;
+    @media(max-width: 560px){
+      font-size: 30px;
+    }
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-around;
+    @media(max-width: 560px){
+      flex-direction: column;
+    }
+  }
+  li{
+    width: 30%;
+    font-size: 23px;
+
+    @media(max-width: 560px){
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+    }
+  }
+
+  img {
+    @media(max-width: 560px){
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

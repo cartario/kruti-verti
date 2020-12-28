@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
-// import logo from '../img/logo.png';
+import logo from '../media/logo.png';
 
 const MenuItems = [
   {
@@ -33,9 +33,9 @@ const Navbar = ({ activeItemIndex }) => {
   return (
     <>
       <nav className={open ? 'navbar' : 'navbar navbar--closed'}>
-        <div>
+        <div onClick={()=>setActive(0)}>
           <Link to="/">
-            <img className="navbar__img" src={''} alt="logoimg" />
+            <img className="navbar__img" src={logo} alt="logoimg" />
           </Link>
         </div>
         <ul className={open ? 'navbar__list' : 'navbar__list closed'}>
