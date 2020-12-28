@@ -1,6 +1,10 @@
 .personal-key {
   background: url('../media/personal-key-bg.png');
   background-size: cover;
+  
+  h2{ 
+    padding: 15px;
+  }
 }
 
 .personal-key-top {
@@ -63,7 +67,7 @@
   img {
     width: 50%;
     margin: 0 auto;
-  }
+  }  
 }
 
 .personal-key-description {
@@ -102,6 +106,22 @@
   }
 }
 
+@media(max-width: 760px){
+  .personal-key-children {
+    flex-direction: column;
+    text-align: center;
+    p {
+      font-size: 20px;
+    }
+    li {
+      border-bottom: 20px solid;
+    }
+    img {
+      width: 50%;
+    }
+  }
+}
+
 @media (max-width: 500px) {
   .personal-key-top {
     flex-direction: column;
@@ -116,21 +136,7 @@
     img {
       width: 70%;
     }
-  }
-
-  .personal-key-children {
-    flex-direction: column;
-    text-align: center;
-    p {
-      font-size: 20px;
-    }
-    li {
-      border-bottom: 20px solid;
-    }
-    img {
-      width: 70%;
-    }
-  }
+  }  
 
   .personal-key-exit{
     img{
