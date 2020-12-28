@@ -6,6 +6,7 @@ import Welcome from './components/welcome';
 import SayHello from './components/say-hello';
 import InfoMustHave from './components/info-must-have';
 import Advantages from './components/advantages';
+import PersonalKeyBlock from './components/personal-key-block';
 import Page1 from './pages/page1';
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
@@ -20,6 +21,7 @@ function App() {
           <SayHello />
           <InfoMustHave />
           <Advantages />
+          <PersonalKeyBlock/>
         </Route>
         <Route path="/p1" exact component={Page1}/>
         <Route path="/p2" exact component={Page2}/>

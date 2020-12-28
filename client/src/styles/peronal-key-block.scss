@@ -1,0 +1,148 @@
+.personal-key {
+  background: url('../media/personal-key-bg.png');
+  background-size: cover;
+}
+
+.personal-key-top {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0;
+  h2 {
+    width: 70%;
+    flex: 1;
+    margin: 0;
+    font-size: 40px;
+    color: #3f0462;
+  }
+}
+
+.personal-key-top__img {
+  width: 30%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.personal-key-children {
+  display: flex;
+  margin-top: -30px;
+  padding: 10px;
+  text-align: right;
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #3f0462;
+  }
+  // img {
+  //   width: 100%;
+  // }
+  li {
+    flex: 1;
+    margin: 0 10px;
+    margin-bottom: 40px;
+    border-bottom: 37px solid;
+  }
+  li:nth-child(1) {
+    border-bottom-color: yellow;
+  }
+  li:nth-child(2) {
+    border-bottom-color: red;
+  }
+  li:nth-child(3) {
+    border-bottom-color: #fc7fe0;
+  }
+}
+
+.personal-key-exit {
+  padding: 15px;
+  img {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.personal-key-description {
+  display: flex;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #3f0462;
+  }
+  img {
+    width: 100%;
+  }
+  li {
+    flex: 1;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+  li:nth-child(1) {
+    background: yellow;
+    border-radius: 30px 0 0 30px;
+  }
+  li:nth-child(2) {
+    background: red;
+    color: white;
+  }
+  li:nth-child(3) {
+    background: #fc7fe0;
+    color: white;
+    border-radius: 0 30px 30px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .personal-key-top {
+    flex-direction: column;
+    h2 {
+      width: 100%;
+      font-size: 30px;
+    }
+  }
+  .personal-key-top__img {
+    width: 100%;
+
+    img {
+      width: 70%;
+    }
+  }
+
+  .personal-key-children {
+    flex-direction: column;
+    text-align: center;
+    p {
+      font-size: 20px;
+    }
+    li {
+      border-bottom: 20px solid;
+    }
+    img {
+      width: 70%;
+    }
+  }
+
+  .personal-key-exit{
+    img{
+      width: 100%;
+    }
+  }
+
+  .personal-key-description {
+    flex-direction: column;
+    text-align: center;
+    p {
+      font-size: 20px;
+    }    
+  }
+}

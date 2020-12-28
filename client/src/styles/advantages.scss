@@ -1,7 +1,7 @@
 .advantages{
   min-height: 695px;
   padding: 60px;
-  font-size: 43px;
+  font-size: 23px;
   color: white;
   background: url('../media/advantages-bg.png') center center no-repeat;
   background-size: cover;
@@ -17,6 +17,7 @@
   width: 697px;
   margin: 0;
   text-align: left;
+  font-size: 30px;
   span:nth-child(1){
     color: #FF7A00;
     font-weight: bold;
@@ -34,8 +35,8 @@
   &::before{
     content: "";
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;    
     left: 0;
     border-radius: 50%;
     background: white;
@@ -43,7 +44,7 @@
 }
 
 .advantages__img{
-  margin-top: -250px;
+  margin-top: -140px;
   text-align: right;
 }
 
@@ -52,7 +53,6 @@
     ul {
       width: 100%;      
       margin: 0 auto;      
-      font-size: 34px;
     }
   }
 
@@ -68,14 +68,12 @@
 
   .advantages__top{
     width: 50%;
-    margin: 0 auto;
-    font-size: 34px;
+    margin: 0 auto;    
   } 
   
   .advantages__item {
     padding-left: 40px;
-    &::before{
-      top: 6px;
+    &::before{      
       width: 30px;
       height: 30px;
     }
@@ -89,17 +87,19 @@
   .advantages ul{
     max-width: 400px;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 18px;
   }
   .advantages__top{
     width: 100%;
-    font-size: 24px;
+   
   }
   .advantages__item{
     margin: 5px 0;
 
     &::before{
-      top: 0;
+      width: 15px;
+      height: 15px;
+      top: 5px;
     }
   }
 }
