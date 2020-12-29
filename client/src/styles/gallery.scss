@@ -1,0 +1,38 @@
+.gallery{
+  height: 436px;
+  padding-top: 5px;
+  color: white;  
+  overflow: hidden;
+
+  h2{    
+    font-size: 40px;
+  }
+}
+
+.gallery__slides{
+  display: flex;
+  
+}
+
+.gallery__slide{
+  min-width: 400px;
+  height: 230px;
+  margin: 20px;
+  background: red;
+  border-radius: 15px;
+}
+
+@media(max-width: 440px){
+  .gallery__slides{
+    position: relative;
+  }
+  .gallery__slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 0;
+    width: 100%;
+    margin: 0;
+    z-index:5;
+  }
+}
