@@ -11,10 +11,11 @@ import TimeBlock from './components/time-block';
 import QuoteBlock from './components/quote-block';
 import Coach from './components/coach';
 import Gallery from './components/gallery';
+import Offers from './components/offers';
 import Page1 from './pages/page1';
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
-import { galleryData, galleryPlaceData } from './mock';
+import { galleryData, galleryPlaceData, offersData } from './mock';
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
             занятиях - развиваются социальные навыки и работа в команде.
           </QuoteBlock>
           <Gallery title="Залы" galleryData={galleryPlaceData} />
+          <Offers data={offersData}/>
         </Route>
         <Route path="/p1" exact component={Page1} />
         <Route path="/p2" exact component={Page2} />

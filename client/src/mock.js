@@ -24,19 +24,133 @@ export const galleryData = [
 export const galleryPlaceData = [
   {
     url:
-    "https://avatars.mds.yandex.net/get-altay/1678797/2a00000169344295a773a1a795761ef1a371/XXXL"},
+      'https://avatars.mds.yandex.net/get-altay/1678797/2a00000169344295a773a1a795761ef1a371/XXXL',
+  },
   {
     url:
-      'https://avatars.mds.yandex.net/get-altay/1633000/2a0000016934429947dcc32a90173adcebe6/XXXL'},
+      'https://avatars.mds.yandex.net/get-altay/1633000/2a0000016934429947dcc32a90173adcebe6/XXXL',
+  },
   {
     url:
-      'https://avatars.mds.yandex.net/get-altay/1453927/2a00000169344295c7b679ff2c8eb74b95eb/XXXL'},
+      'https://avatars.mds.yandex.net/get-altay/1453927/2a00000169344295c7b679ff2c8eb74b95eb/XXXL',
+  },
   {
     url:
-      'https://avatars.mds.yandex.net/get-altay/1349040/2a000001644868210a04d9b29344429799c7/XXXL'},
+      'https://avatars.mds.yandex.net/get-altay/1349040/2a000001644868210a04d9b29344429799c7/XXXL',
+  },
   {
     url:
-      'https://avatars.mds.yandex.net/get-altay/2805836/2a00000174e036e38aaf783a3d1355ac83f8/XXXL'},
+      'https://avatars.mds.yandex.net/get-altay/2805836/2a00000174e036e38aaf783a3d1355ac83f8/XXXL',
+  },
 ];
 
-
+export const offersData = [
+  {
+    _id: '1',
+    name: 'fdfd',
+    title: 'dfd',
+    description: 'dsds',
+    imgUrl:
+      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
+    price: 'dsds',
+  },
+  {
+    _id: '2',
+    name: 'fdfd',
+    title: 'dfd',
+    description: 'dsds',
+    imgUrl:
+      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
+    price: 'dsds',
+  },
+  {
+    _id: '3',
+    name: 'fdfd',
+    title: 'dfd',
+    description: 'dsds',
+    imgUrl:
+      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
+    price: 'dsds',
+  },
+  {
+    _id: '4',
+    name: 'fdfd',
+    title: 'dfd',
+    description: 'dsds',
+    imgUrl:
+      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
+    price: 'dsds',
+  },
+  {
+    _id: '5',
+    name: 'fdfd',
+    title: 'dfd',
+    description: 'dsds',
+    imgUrl:
+      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
+    price: 'dsds',
+  },
+  {
+    _id: '6',
+    name: 'fdfd',
+    title: 'dfd',
+    description: 'dsds',
+    imgUrl:
+      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
+    price: 'dsds',
+  },
+  {
+    _id: '7',
+    name: 'fdfd',
+    title: 'dfd',
+    description: 'dsds',
+    imgUrl:
+      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
+    price: 'dsds',
+  },
+  {
+    _id: '8',
+    name: 'fdfd',
+    title: 'dfd',
+    description: 'dsds',
+    imgUrl:
+      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
+    price: 'dsds',
+  },
+  {
+    _id: '9',
+    name: 'fdfd',
+    title: 'dfd',
+    description: 'dsds',
+    imgUrl:
+      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
+    price: 'dsds',
+  },
+  {
+    _id: '10',
+    name: 'fdfd',
+    title: 'dfd',
+    description: 'dsds',
+    imgUrl:
+      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
+    price: 'dsds',
+  },
+  {
+    _id: '11',
+    name: 'fdfd',
+    title: 'dfd',
+    description: 'dsds',
+    imgUrl:
+      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
+    price: 'dsds',
+  },
+  {
+    _id: '12',
+    name: 'fdfd',
+    title: 'dfd',
+    description: 'dsds',
+    imgUrl:
+      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
+    price: 'dsds',
+  },
+];
