@@ -1,5 +1,4 @@
 import React from 'react';
-import coachImg from '../media/coach.png';
 
 const Coach = () => {
   return (

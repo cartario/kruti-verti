@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Gallery = ({ title, bgColor, colorTitle, galleryData }) => {
+const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay=true }) => {
   const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {
-    setInterval(handleIncrementCount, 3000 * (1 + Math.random()));
-  }, []);
+    if(autoPlay){
+      setInterval(handleIncrementCount, 3000 * (1 + Math.random()));
+    }
+  }, [autoPlay]);
 
   const handleIncrementCount = () => {
     setCount((prev) => {
@@ -41,7 +43,9 @@ const Gallery = ({ title, bgColor, colorTitle, galleryData }) => {
           <li
             className="gallery__slide"
             style={{ backgroundImage: `url(${galleryData && galleryData[1].url})` }}
-          ></li>
+          >
+            {children}
+          </li>
 
           <li
             className="gallery__slide"

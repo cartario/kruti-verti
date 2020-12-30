@@ -14,7 +14,7 @@ import Gallery from './components/gallery';
 import Page1 from './pages/page1';
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
-import {galleryData, galleryPlaceData} from './mock';
+import { galleryData, galleryPlaceData } from './mock';
 
 function App() {
   return (
@@ -39,12 +39,22 @@ function App() {
             <br /> - и вот вы уже создаете свою вселенную
           </QuoteBlock>
           <Coach />
-          <Gallery title="Галерея" bgColor="#5A1CA9" colorTitle="white" galleryData={galleryData} />
+          <Gallery title="Галерея" bgColor="#5A1CA9" colorTitle="white" galleryData={galleryData} autoPlay={false}>
+            <iframe
+              title="promo"
+              width="auto"
+              height="100%"
+              src="https://www.youtube.com/embed/pPUJcwceBOw"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </Gallery>
           <QuoteBlock>
             Одновременно с физическим ростом ты развиваешь и умственные навыки , на групповых
             занятиях - развиваются социальные навыки и работа в команде.
           </QuoteBlock>
-          <Gallery title="Помещение для тренировок" galleryData={galleryPlaceData} />
+          <Gallery title="Залы" galleryData={galleryPlaceData} />
         </Route>
         <Route path="/p1" exact component={Page1} />
         <Route path="/p2" exact component={Page2} />
