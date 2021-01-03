@@ -6,7 +6,7 @@ export default function ({_id, name, title, description, imgUrl, price}) {
   const history = useHistory();
 
   const handleClick = (_id) => {
-    history.push(`/detail/${_id}`);
+    history.push(`/offer/${_id}`);
   }
 
   return (

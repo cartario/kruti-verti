@@ -1,4 +1,5 @@
 import { Route } from 'react-router-dom';
+
 import './styles/index.scss';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
@@ -12,9 +13,11 @@ import QuoteBlock from './components/quote-block';
 import Coach from './components/coach';
 import Gallery from './components/gallery';
 import Offers from './components/offers';
+import MapBlock from './components/map';
 import Page1 from './pages/page1';
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
+import OfferPage from './pages/offer.jsx'
 import { galleryData, galleryPlaceData, offersData } from './mock';
 
 function App() {
@@ -40,6 +43,7 @@ function App() {
             <br /> - и вот вы уже создаете свою вселенную
           </QuoteBlock>
           <Coach />
+          
           <Gallery title="Галерея" bgColor="#5A1CA9" colorTitle="white" galleryData={galleryData} autoPlay={false}>
             <iframe
               title="promo"
@@ -51,16 +55,21 @@ function App() {
               allowFullScreen
             ></iframe>
           </Gallery>
+          
           <QuoteBlock>
             Одновременно с физическим ростом ты развиваешь и умственные навыки , на групповых
             занятиях - развиваются социальные навыки и работа в команде.
           </QuoteBlock>
           <Gallery title="Залы" galleryData={galleryPlaceData} />
           <Offers data={offersData}/>
+          <MapBlock/>
         </Route>
         <Route path="/p1" exact component={Page1} />
         <Route path="/p2" exact component={Page2} />
         <Route path="/p3" exact component={Page3} />
+        <Route path="/offer/:id">
+            <OfferPage />
+          </Route>
       </div>
       <div className="App__footer">
         <Footer />

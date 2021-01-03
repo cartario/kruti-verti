@@ -8,7 +8,7 @@ const MenuItems = [
     link: '/',
   },
   {
-    title: 'Page1',
+    title: 'Предложения',
     link: '/p1',
   },
   {
@@ -44,6 +44,7 @@ const Navbar = ({ activeItemIndex }) => {
               key={item.title}
               className={`navbar__item ${active === index ? 'navbar__item--active' : ''}`}
               onClick={() => handleClick(index)}
+              
             >
               <Link to={item.link}>{item.title}</Link>
             </li>

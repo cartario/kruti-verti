@@ -1,0 +1,23 @@
+.show-more-btn{
+  button {
+    width: 300px;
+    margin: 30px;
+    padding: 15px;    
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 60px;
+    outline: none;
+    background: #FD6C21;
+    color: white;
+
+    &:hover{
+      background: #d65413;
+    }
+
+    @media(max-width: 400px){
+      width: calc(100% - 10px);
+      margin: 30px auto;
+    }
+  }
+}
