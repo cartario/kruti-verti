@@ -12,11 +12,11 @@ const MenuItems = [
     link: '/p1',
   },
   {
-    title: 'Page2',
+    title: 'Online',
     link: '/p2',
   },
   {
-    title: 'Page3',
+    title: 'Для студий и тренеров',
     link: '/p3',
   }
 ];

@@ -1,9 +1,15 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import {offersData} from '../mock';
+import Offers from '../components/offers';
 
 const Page1 = () => {
   return (
     <div>
-      Page1
+      
+      <Link to="/">Назад</Link>
+      
+      <Offers data={offersData}/>
       
     </div>
   );

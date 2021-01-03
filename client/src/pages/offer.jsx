@@ -1,11 +1,11 @@
 import React from 'react';
 import {useParams, useHistory} from 'react-router-dom';
-import {offersData} from '../mock';
+import {offersData, offersDataForStudios} from '../mock';
 
 const OfferPage = () => {  
   const offerId = useParams().id;
   const history = useHistory();
-  const currentOffer = offersData.find((offer)=>offer._id===offerId);  
+  const currentOffer = offersData.concat(offersDataForStudios).find((offer)=>offer._id===offerId);  
 
   return (
     <div className="offer-page">

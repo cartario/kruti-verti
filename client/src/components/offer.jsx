@@ -1,7 +1,7 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
 
-export default function ({_id, name, title, description, imgUrl, price}) {
+export default function ({_id, name, title, description, imgUrl, price, disabled}) {
   
   const history = useHistory();
 
@@ -10,7 +10,7 @@ export default function ({_id, name, title, description, imgUrl, price}) {
   }
 
   return (
-    <article onClick = {()=>handleClick(_id)} className="offer">
+    <article onClick = {()=>handleClick(_id)} className={disabled? "offer offer--disabled" : "offer"}>
       <div className="offer__img">
         <img src={imgUrl? imgUrl : "https://bayramix.ru/local/templates/bayramix_new/images/load.gif"} width="300" alt="offerImg" />
         <p>{name}</p>
@@ -19,7 +19,7 @@ export default function ({_id, name, title, description, imgUrl, price}) {
         <p className="offer__description">
           {description ? description.substr(0, 180) : "Description"}...
         </p>
-        <p className="offer__price">price</p>
+        <p className="offer__price">{price}</p>
       </div>
     </article>
   );

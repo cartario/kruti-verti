@@ -111,6 +111,11 @@
   text-transform: uppercase;
 }
 
+.offer--disabled{
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 @media(max-width: 1440px){
   .offers__list {
     width: 80%;
