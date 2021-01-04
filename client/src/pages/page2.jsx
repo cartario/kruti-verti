@@ -14,7 +14,7 @@ const NavOnline = () => {
 
   const handleClick = () => {
     history.goBack();
-  };
+  };  
 
   return (
     <div className="online__nav">
@@ -46,16 +46,83 @@ const TopOnline = () => {
   );
 };
 
+const Popup = ({ popupObj, closePopup, bgColor }) => {
+  const { title, levelTitle, sessionNumber } = popupObj;
+  const [tutorialVisible, setTutorialVisible] = React.useState(false);
+  const history = useHistory();
+
+  const handleToggleTutorialVisible = () => {
+    setTutorialVisible((prev) => !prev);
+  };
+
+  const handleStartClick = () => {
+    history.push('/start');
+
+    //TODO добавить в редакс выбранный обьект
+  }
+
+  return (
+    <div className="online__popup">
+      <div className="online__popup-inner" style={{ background: `radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, ${bgColor} 100%)`}}>
+        <div className="online__popup-top">
+          <span onClick={closePopup}>+</span>
+        </div>
+        <div className="online__popup-info">
+          <h3>{title}</h3>
+          <p>
+            Level-{levelTitle} <span>Session-{sessionNumber}</span>
+          </p>
+        </div>
+        <div className="online__popup-controls">
+          <button className="online__popup-controls--start" style={{ color: bgColor }} onClick={handleStartClick}>
+            START
+          </button>
+          <button
+            className="online__popup-controls--tutorial"
+            onClick={handleToggleTutorialVisible}
+          >
+            {tutorialVisible ? 'СКРЫТЬ TUTORIAL' : 'TUTORIAL'}
+          </button>
+          {tutorialVisible && (
+            <div className="online__popup-video-tutorial">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gGl92ThhoVs"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          )}
+          
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Session = ({ index, title, levelTitle, backgroundColor, backgroundImage }) => {
   const [open, setOpen] = React.useState(false);
 
+  const handleClosePopup = () => {
+    setOpen((prev) => !prev);
+  };
+
   return (
-    <li onClick={() => {      
-      setOpen(!open)
-    }}>
-      <PopupMaterial open={open} setOpen={setOpen} obj={{ title, sessionTitle: index + 1, levelTitle }}/>
+    <li>
+      <PopupMaterial open={open} setOpen={setOpen}>
+        <Popup
+          closePopup={handleClosePopup}
+          bgColor={backgroundColor}
+          popupObj={{ title, levelTitle, sessionNumber: index + 1 }}
+        />
+      </PopupMaterial>
       <div className="online__session-bar">
         <div
+          onClick={() => {
+            setOpen(!open);
+          }}
           className="online__session-circle"
           style={{
             backgroundColor,
@@ -68,19 +135,18 @@ const Session = ({ index, title, levelTitle, backgroundColor, backgroundImage })
   );
 };
 
-const Level = ({ title, sessions, disabled }) => { 
-
+const Level = ({ title, sessions, disabled }) => {
   return (
     <article className={disabled ? 'online__level online--disabled' : 'online__level'}>
       <h2>
         <span>Level {title}</span>
       </h2>
-      
+
       <ul className="online__session">
         {sessions &&
           sessions.map((session, index) => (
             <Session
-              index={index}              
+              index={index}
               key={session.title}
               title={session.title}
               levelTitle={title}
@@ -134,7 +200,7 @@ const OnlinePage = () => {
       <NavOnline />
       <TopOnline />
       <ContentOnline />
-      <BottomOnline />
+      <BottomOnline />      
     </div>
   );
 };
