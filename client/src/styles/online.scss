@@ -1,0 +1,130 @@
+.online__container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+
+  @media(max-width: 500px){
+    width: 100%;
+  }
+}
+
+.online--disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.online__nav{
+  color: white;
+  background: black;
+
+  p{
+    margin: 0;
+    padding: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover{
+      color: orange;
+    }
+  }
+}
+
+.online__top{
+  background: white;
+}
+
+.online__top, .online__bottom{
+  position: sticky;
+  top: 0;
+  min-height: 60px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  li{
+    display: flex;
+    align-items: center;
+
+    &:nth-child(1) span{
+      color: #FD6C21;
+    }
+
+    &:nth-child(2) span{
+      color: #560065;
+    }
+
+    &:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    &:active{
+      opacity: 0.7;
+    }
+  }
+  img {
+    max-width: 40px;
+    height: auto;
+  }
+  span{
+    padding-left:5px;
+    font-size: 24px;    
+  }  
+}
+
+.online__content{
+  // height: 1000px;
+
+  h2 {
+    width: 254px;
+    height: 0;  
+    margin: 20px auto;    
+    border-bottom: 45px solid #FD6C21;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    color: white;
+
+    span:first-child {
+      display: block;
+      padding-top: 9px;
+    }
+    span:nth-child(2){
+      display: block;
+      margin-top: -7px;
+      font-size: 13px;        
+    }
+  }
+}
+
+.online__bottom{
+  position: sticky;
+  bottom: 0;
+  height: 60px;
+  background: #560065;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.online__session{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+}
+
+.online__session-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;  
+  border-radius: 50%;
+  background: grey;
+}
+
+.online__session-circle{
+  width: 70px;
+  height: 70px;  
+  border-radius: 50%;  
+  background-repeat: no-repeat;
+  background-position: 50%;
+}

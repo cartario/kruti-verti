@@ -223,3 +223,37 @@ export const offersDataForStudios = [
     price: '1000руб.',
   },
 ];
+
+
+export 
+const sessions = [{
+  title: "Toprock",
+  backgroundColor: "purple",
+//   backgroundImage: bookImg
+},
+{
+  title: "Footwork",
+  backgroundColor: "#1FA91C",
+  // backgroundImage: bookImg
+},
+{
+  title: "Powermove",
+  backgroundColor: "#A91C82",
+  // backgroundImage: bookImg
+},
+{
+  title: "Freeze",
+  backgroundColor: "#E86D14",
+  // backgroundImage: bookImg
+},
+{
+  title: "Combo",
+  backgroundColor: "#25F0FD",
+  // backgroundImage: bookImg
+},
+{
+  title: "Super Combo",
+  backgroundColor: "#FF505A",
+  // backgroundImage: bookImg
+}
+];
