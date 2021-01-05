@@ -257,13 +257,23 @@
   }
 }
 
+.online__start-video-countdown{
+  width: 300px;
+  height: 150px;  
+  font-size: 50px;  
+  h2{
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .online__start-timer {
   h2 {
     margin: 0;
     margin-top: 10px;
     font-size: 102px;
   }
-  
+
   h3 {
     margin: 0;
     margin-top: -20px;
@@ -273,6 +283,7 @@
 }
 
 .online__start-timer-result {
+  margin-bottom: 40px;
   p {
     font-size: 24px;
   }

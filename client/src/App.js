@@ -71,7 +71,7 @@ function App() {
         <Route path="/offer/:id">
           <OfferPage />
         </Route>
-        <Route path="/start">
+        <Route path="/start/:id">
           <StartPage />
         </Route>
       </div>

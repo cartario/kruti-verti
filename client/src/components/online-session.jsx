@@ -2,7 +2,7 @@ import React from 'react';
 import PopupMaterial from './popupMaterial';
 import Popup from './online-popup';
 
-const Session = ({ index, title, levelTitle, backgroundColor, backgroundImage }) => {
+const Session = ({ id, index, title, levelTitle, backgroundColor, backgroundImage }) => {
   const [open, setOpen] = React.useState(false);
 
   const handleClosePopup = () => {
@@ -15,7 +15,7 @@ const Session = ({ index, title, levelTitle, backgroundColor, backgroundImage })
         <Popup
           closePopup={handleClosePopup}
           bgColor={backgroundColor}
-          popupObj={{ title, levelTitle, sessionNumber: index + 1 }}
+          popupObj={{ id,title, levelTitle, sessionNumber: index + 1 }}
         />
       </PopupMaterial>
       <div className="online__session-bar">

@@ -11,7 +11,8 @@ const Popup = ({ popupObj, closePopup, bgColor }) => {
   };
 
   const handleStartClick = () => {
-    history.push('/start');
+    const id = popupObj.id;
+    history.push(`/start/${id}`);
 
     //TODO добавить в редакс выбранный обьект
   }

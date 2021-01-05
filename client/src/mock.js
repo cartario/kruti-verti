@@ -227,31 +227,37 @@ export const offersDataForStudios = [
 
 export 
 const sessions = [{
+  _id: '1',
   title: "Toprock",
   backgroundColor: "purple",
 //   backgroundImage: bookImg
 },
 {
+  _id: '2',
   title: "Footwork",
   backgroundColor: "#1FA91C",
   // backgroundImage: bookImg
 },
 {
+  _id: '3',
   title: "Powermove",
   backgroundColor: "#A91C82",
   // backgroundImage: bookImg
 },
 {
+  _id: '4',
   title: "Freeze",
   backgroundColor: "#E86D14",
   // backgroundImage: bookImg
 },
 {
+  _id: '5',
   title: "Combo",
   backgroundColor: "#25F0FD",
   // backgroundImage: bookImg
 },
 {
+  _id: '6',
   title: "Super Combo",
   backgroundColor: "#FF505A",
   // backgroundImage: bookImg

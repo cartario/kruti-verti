@@ -1,13 +1,34 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import NavOnline from '../components/online-nav';
 import TopOnline from '../components/online-top';
 import BottomOnline from '../components/online-bottom';
 import videoSrc from '../media/online/test-task.mp4';
+import { sessions } from '../mock';
 
-const Timer = ({ time }) => {
+const Result = () => {
+  const history = useHistory();
+
+  const handleSuccess = () => {
+    history.goBack();
+  }
+
+  const handleFail = () => {
+    history.go(0);
+  }
+
+  return (
+    <div className="online__start-timer-result">
+      <p>Успех?</p>
+      <button onClick={handleSuccess}>Да</button>
+      <button onClick={handleFail}>Нет</button>
+    </div>
+  );
+};
+
+const Timer = ({ time , handler}) => {
   const [count, setCount] = React.useState(time);
-  
+
   React.useEffect(() => {
     const addTimer = setInterval(() => {
       setCount((prev) => {
@@ -20,24 +41,37 @@ const Timer = ({ time }) => {
 
     const timer = count > 0 && addTimer;
 
+    handler&&handler(count);
+
     return () => clearInterval(timer);
   }, [count]);
 
-  return <h2>{!count 
-    ? <div className="online__start-timer-result">
-      <p>Успех?</p>
-      <button>Да</button>
-      <button>Нет</button>
-    </div>
-    : `00:${count < 10 ? `0${count}` : count}`}</h2>;
+  return <h2>{`00:${count < 10 ? `0${count}` : count}`}</h2>;
 };
 
 const StartPage = () => {
   const history = useHistory();
+  const id = useParams().id;
+  const [runingTimer, setRuningTimer] = React.useState(false);
+  const [countTimer, setCountTimer] = React.useState(null);
+
+  const currentSession = sessions.find((session) => session._id === id);
 
   const handleClose = () => {
     history.goBack();
   };
+
+  const handleCountTimer = (value) => {
+    if(value===0){
+      setCountTimer(0);  
+    } 
+  }
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setRuningTimer(true);
+    }, 5000);
+  }, []);
 
   return (
     <div>
@@ -60,13 +94,20 @@ const StartPage = () => {
                 />
               </svg>
             </h2>
-            <video width="260" height="150" autoPlay muted>
-              <source src={videoSrc} type="video/mp4" />
-            </video>
+            {runingTimer ? (
+              <video width="260" height="150" autoPlay muted playsInline>
+                <source src={videoSrc} type="video/mp4" />
+              </video>
+            ) : (
+              <div className="online__start-video-countdown">
+                <Timer time={5} />
+              </div>
+            )}
           </div>
           <div className="online__start-timer">
-            <Timer time={60} />
-            <h3>Toprock</h3>
+            {runingTimer&&countTimer!==0 && <Timer time={60} handler={handleCountTimer}/>}
+            {countTimer===0&&<Result/>}
+            <h3>{currentSession.title}</h3>
           </div>
         </div>
       </section>
