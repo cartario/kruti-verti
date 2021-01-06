@@ -14,16 +14,21 @@ const ContentOnline = () => {
         <Level title="3" sessions={sessions} disabled />
         <Level title="4" sessions={sessions} disabled />
         <Level title="5" sessions={sessions} disabled />
-        <Level title="6" sessions={sessions} />
+        <Level title="6" sessions={sessions} disabled/>
       </div>
     </div>
   );
 };
 
 const OnlinePage = () => {
+  React.useEffect(()=>{   
+    const navbarClose = document.querySelector('.navbar__close');   
+    navbarClose.setAttribute("style", "display:none");
+  },[]);
+
   return (
     <div className="online">
-      <NavOnline />
+      {/* <NavOnline /> */}
       <TopOnline />
       <ContentOnline />
       <BottomOnline />      

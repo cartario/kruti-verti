@@ -55,7 +55,7 @@ const Navbar = ({ activeItemIndex }) => {
       <div
         onClick={() => setOpen(!open)}
         className={
-          open ? 'navbar__close navbar__close--open' : 'navbar__close navbar__close--close'
+          open ? `navbar__close navbar__close--open` : `navbar__close navbar__close--close`
         }
       ></div>
     </>

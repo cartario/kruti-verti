@@ -67,7 +67,10 @@ const StartPage = () => {
     } 
   }
 
-  React.useEffect(() => {
+  React.useEffect(() => {    
+    const navbarClose = document.querySelector('.navbar__close');    
+    navbarClose.classList.add('navbar__close--online');
+
     setTimeout(() => {
       setRuningTimer(true);
     }, 5000);

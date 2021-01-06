@@ -57,8 +57,13 @@ $activeItemColor: #5A1CA9;
 }
 
 .navbar__close{
-  display: none;
+  display: none; 
+  &.navbar__close--online{
+    display: none;
+  } 
 }
+
+
 
 @media(max-width: 739px){
   .navbar{ 
