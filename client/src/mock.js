@@ -239,7 +239,7 @@ const sessions = [{
   _id: '1',
   title: "Indian step",
   backgroundColor: "purple",
-  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610169647/kruti-verti/tutorial-indian-step_vcfa4c.mp4",
+  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610200031/kruti-verti/online/indian-tut_cnwmov.mp4",
   trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610174175/kruti-verti/training-indianstep_eigtqd.mp4",
 //   backgroundImage: bookImg
 },
