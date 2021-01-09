@@ -1,3 +1,6 @@
+import coffeMillTrain from './media/online/training-coffemill.mp4';
+import coffeMillTutorial from './media/online/tutorial-coffemill.mp4';
+
 export const galleryData = [
   {
     url:
@@ -225,6 +228,8 @@ export const offersDataForStudios = [
 ];
 
 
+
+
 export 
 const sessions = [{
   _id: '1',
@@ -252,10 +257,10 @@ const sessions = [{
 },
 {
   _id: '4',
-  title: "Freeze",
+  title: "CoffeeMill",
   backgroundColor: "#E86D14",
-  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610169647/kruti-verti/tutorial-indian-step_vcfa4c.mp4",
-  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610169647/kruti-verti/tutorial-indian-step_vcfa4c.mp4",
+  tutorialVideo: coffeMillTutorial,
+  trainingVideo: coffeMillTrain,
   // backgroundImage: bookImg
 },
 {
