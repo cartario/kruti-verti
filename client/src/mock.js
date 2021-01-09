@@ -58,8 +58,8 @@ export const offersData = [
     title: '+10 к опыту',
     description: '-Бесплатная подписка 1 мес -1 индивидуальная тренировка -3 новых элемента',
     imgUrl:
-      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
-    price: '2000руб.',
+      'https://res.cloudinary.com/dxioiveim/image/upload/v1610219219/kruti-verti/offers/maxresdefault_1_k6acla.jpg',
+       price: '2000руб.',
   },
   {
     _id: '2',
@@ -67,8 +67,8 @@ export const offersData = [
     title: '+15 к опыту',
     description: '-Бесплатная подписка 1 мес -4 индивидуальных тренировки -8 новых элементов',
     imgUrl:
-      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
-    price: '9499руб.',
+      'https://res.cloudinary.com/dxioiveim/image/upload/v1610219219/kruti-verti/offers/home1_c3vaxf.jpg',
+       price: '9499руб.',
     disabled: true,
   },
   {
@@ -77,8 +77,8 @@ export const offersData = [
     title: '+15 к опыту',
     description: '-Бесплатная подписка 1 мес -2 индивидуальных тренировки -6 новых элементов',
     imgUrl:
-      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
-    price: '5499руб.',
+      'https://res.cloudinary.com/dxioiveim/image/upload/v1610219218/kruti-verti/offers/maxresdefault_sx9gjd.jpg',
+      price: '5499руб.',
   },
   {
     _id: '4',
@@ -86,8 +86,8 @@ export const offersData = [
     title: '+15 к опыту',
     description: 'Доступ к обучающим видео в течении одного месяца',
     imgUrl:
-      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
-    price: '500руб.',
+      'https://res.cloudinary.com/dxioiveim/image/upload/v1610219219/kruti-verti/offers/home2_cmpxqj.jpg',
+      price: '500руб.',
   },
   {
     _id: '5',
@@ -95,8 +95,8 @@ export const offersData = [
     title: '+15 к опыту',
     description: 'Доступ к обучающим видео в течении трех месяцев',
     imgUrl:
-      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
-    price: '1200 руб.',
+      'https://res.cloudinary.com/dxioiveim/image/upload/v1610219217/kruti-verti/offers/a14d5ebdd0eb7fcffef366dd02464041_y70rbk.jpg',
+      price: '1200 руб.',
   },
   {
     _id: '6',
@@ -105,8 +105,8 @@ export const offersData = [
     description:
       '-Бесплатная подписка 1 мес -2 индивидуальных тренировки -6 новых элементов, 2 онлайн тренировки',
     imgUrl:
-      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
-    price: '6500руб.',
+      'https://res.cloudinary.com/dxioiveim/image/upload/v1610219218/kruti-verti/offers/fDyU09_tp7r3f.jpg',
+      price: '6500руб.',
     disabled: true,
   },
   {
@@ -115,8 +115,8 @@ export const offersData = [
     title: '+15 к опыту',
     description: '-Бесплатная подписка 1 мес, 1 индивидуальная тренировка 60 мин',
     imgUrl:
-      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
-    price: '3000руб.',
+      'https://res.cloudinary.com/dxioiveim/image/upload/v1610219218/kruti-verti/offers/brakedance-1229045_1280_v8bi5z.jpg',
+      price: '3000руб.',
   },
   {
     _id: '8',
@@ -125,8 +125,8 @@ export const offersData = [
     description:
       '-Бесплатная подписка 1 мес -1 индивидуальная тренировка -3 новых элемента, 1 онлайн тренировка',
     imgUrl:
-      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
-    price: '2500руб.',
+      'https://res.cloudinary.com/dxioiveim/image/upload/v1610219218/kruti-verti/offers/brakedance-1250354_1280_epy5yp.jpg',
+      price: '2500руб.',
   },
   {
     _id: '9',
@@ -134,8 +134,8 @@ export const offersData = [
     title: '+15 к опыту',
     description: 'Онлайн тренировка 60 мин. Подходит для тех кто уже знает базовые движения.',
     imgUrl:
-      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
-    price: '800руб.',
+      'https://res.cloudinary.com/dxioiveim/image/upload/v1610219217/kruti-verti/offers/9261752e196565a7d40bdcfb8f257726d403088er1-750-469v2_hq_swqzuv.jpg',
+      price: '800руб.',
   },
   {
     _id: '10',
@@ -144,8 +144,8 @@ export const offersData = [
     description:
       'Групповое занятие  длится 60 мин. Необходимо предварительно уточнить свободные места.',
     imgUrl:
-      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
-    price: 'Бесплатно',
+      'https://res.cloudinary.com/dxioiveim/image/upload/v1610219645/kruti-verti/offers/girl-3691314_1920_ekqriv.jpg',
+      price: 'Бесплатно',
   },
   {
     _id: '11',
@@ -154,8 +154,8 @@ export const offersData = [
     description:
       '-Бесплатная подписка 1 мес -8 групповых занятий по абонементу в течении 1 мес. Необходимо предварительно уточнить свободные места.',
     imgUrl:
-      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
-    price: '3400руб.',
+      'https://res.cloudinary.com/dxioiveim/image/upload/v1610219643/kruti-verti/offers/3637c326efa632fa85666a1d99257abf67cacb94r1-660-438v2_hq_jzid9f.jpg',
+      price: '3400руб.',
   },
   {
     _id: '12',
@@ -164,8 +164,8 @@ export const offersData = [
     description:
       '-Бесплатная подписка 1 мес -4 индивидуальных тренировки -8 новых элементов, -4 онлайн тренировки',
     imgUrl:
-      'https://sun9-45.userapi.com/impf/aVGi_H4zlotUNmbYJ7GCawyg-nrpuLvzT7igxg/2Dp_4gtvsSI.jpg?size=2560x1712&quality=96&proxy=1&sign=27adcd3c89be8b61c369ca727fa0f672&type=album',
-    price: '11000руб.',
+      'https://res.cloudinary.com/dxioiveim/image/upload/v1610219646/kruti-verti/offers/maxresdefault_2_b6q34d.jpg',
+      price: '11000руб.',
     disabled: true,
   },
 ];

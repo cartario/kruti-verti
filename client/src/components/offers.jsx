@@ -1,15 +1,21 @@
 import React from 'react';
 import Offer from '../components/offer';
 import ShowMoreBtn from '../components/show-more';
+import {useHistory} from 'react-router-dom';
 
 const Offers = ({data}) => {
   const CLICK_BY_BTN = 3;
   const [visibleItems, setVisibleItems] = React.useState(3);
+  const history = useHistory();
 
   const handleShowMoreClick = () => {
 
     setVisibleItems((prev)=>prev + CLICK_BY_BTN);
 
+  }
+
+  const handleClickOnline = () => {
+    history.push('/p2')
   }
 
   return (
@@ -22,7 +28,7 @@ const Offers = ({data}) => {
           </li>
         ))}
       </ul>
-      {visibleItems >= data.length ? "": <ShowMoreBtn handleShowMoreClick={handleShowMoreClick}/>}
+      {visibleItems >= data.length ? <button onClick={handleClickOnline} className="btn shake">Попробовать онлайн бесплатно</button>: <ShowMoreBtn handleShowMoreClick={handleShowMoreClick}/>}
     </div>
   );
 };

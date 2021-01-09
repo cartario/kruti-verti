@@ -50,11 +50,12 @@ function App() {
               title="promo"
               width="auto"
               height="100%"
-              src="https://www.youtube.com/embed/pPUJcwceBOw"
+              src="https://www.youtube.com/embed/kt-JEtc-WgI"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
+           
           </Gallery>
           
           <QuoteBlock>

@@ -11,7 +11,7 @@ const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay=t
 
   const handleIncrementCount = () => {
     setCount((prev) => {
-      if (prev === 2) {
+      if (prev === 3) {
         return 0;
       }
       return prev + 1;
@@ -21,7 +21,7 @@ const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay=t
   const handleIDecrementCount = () => {
     setCount((prev) => {
       if (prev === 0) {
-        return 2;
+        return 3;
       }
       return prev - 1;
     });

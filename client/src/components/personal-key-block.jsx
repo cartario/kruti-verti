@@ -21,7 +21,7 @@ const PersonalKeyBlock = () => {
         </li>
         <li>
           <p>или такой</p>
-          <img src={child2} alt="personal-key-children-img" />
+          <img className="shake-fast" src={child2} alt="personal-key-children-img" />
         </li>
         <li>
           <p>возможно такой</p>
@@ -29,7 +29,7 @@ const PersonalKeyBlock = () => {
         </li>
       </ul>
       <div className="personal-key-exit">
-        <img src={exitImg} alt="personal-key-exit-img" />
+        <img className="shake" src={exitImg} alt="personal-key-exit-img" />
       </div>
 
       <h2>Для каждого найдется индивидуальный подход:</h2>
@@ -39,7 +39,7 @@ const PersonalKeyBlock = () => {
           тренера разумеется
         </li>
         <li>Гиперактивный - а вы устали от беготни и шума - научим бесшумно бегать на руках</li>
-        <li>Девченки тоже танцуют брейк - даже лучше парней некоторых</li>
+        <li>Девчонки тоже танцуют брейк - даже лучше некоторых парней</li>
       </ul>
 
       <h6>@Kruti-verti - брейк данc обучение и развитие</h6>

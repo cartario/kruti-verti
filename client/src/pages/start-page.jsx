@@ -106,7 +106,7 @@ const StartPage = () => {
   const id = useParams().id;
   const [runingTimer, setRuningTimer] = React.useState(false);
   const [countTimer, setCountTimer] = React.useState(null);
-  const [muted, setMuted] = React.useState(false);
+  const [muted, setMuted] = React.useState(true);
   const videoRef = useRef();
   const audioRef = useRef();
   const TRAINING_TIME = 60;
@@ -124,8 +124,7 @@ const StartPage = () => {
   };
 
   const handlePauseMusic = () => {
-    setMuted((prev) => !prev);
-    console.log(muted);
+    setMuted((prev) => !prev);    
   };
 
   React.useEffect(() => {
@@ -182,7 +181,7 @@ const StartPage = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       
-                      enable-background="new 0 0 451.111 451.111"
+                      enableBackground="new 0 0 451.111 451.111"
                       height="33"
                       viewBox="0 0 451.111 451.111"
                       width="33"
@@ -193,7 +192,7 @@ const StartPage = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       
-                      enable-background="new 0 0 451.111 451.111"
+                      enableBackground="new 0 0 451.111 451.111"
                       height="33"
                       viewBox="0 0 451.111 451.111"
                       width="33"
