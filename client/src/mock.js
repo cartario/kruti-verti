@@ -1,5 +1,9 @@
 import coffeMillTrain from './media/online/training-coffemill.mp4';
 import coffeMillTutorial from './media/online/tutorial-coffemill.mp4';
+import babyTrain from './media/online/training-baby.mp4';
+import babyTutorial from './media/online/tutorial-baby.mp4';
+import threeTrain from './media/online/training-three.mp4';
+import threeTutorial from './media/online/tutorial-three.mp4';
 
 export const galleryData = [
   {
@@ -265,18 +269,17 @@ const sessions = [{
 },
 {
   _id: '5',
-  title: "Combo",
+  title: "Baby Freeze",
   backgroundColor: "#25F0FD",
-  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610169647/kruti-verti/tutorial-indian-step_vcfa4c.mp4",
-  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610169647/kruti-verti/tutorial-indian-step_vcfa4c.mp4",
+  tutorialVideo: babyTutorial,
+  trainingVideo: babyTrain,
   // backgroundImage: bookImg
 },
 {
   _id: '6',
-  title: "Super Combo",
+  title: "3-Step",
   backgroundColor: "#FF505A",
-  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610169647/kruti-verti/tutorial-indian-step_vcfa4c.mp4",
-  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610169647/kruti-verti/tutorial-indian-step_vcfa4c.mp4",
-  // backgroundImage: bookImg
+  tutorialVideo: threeTutorial,
+  trainingVideo: threeTrain,
 }
 ];

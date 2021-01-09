@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import videoSrc from '../media/online/tutorial-indian-step.mp4'
 
 const Popup = ({ popupObj, closePopup, bgColor }) => {
   const { title, levelTitle, sessionNumber } = popupObj;
@@ -16,11 +15,14 @@ const Popup = ({ popupObj, closePopup, bgColor }) => {
     history.push(`/start/${id}`);
 
     //TODO добавить в редакс выбранный обьект
-  }
+  };
 
   return (
     <div className="online__popup">
-      <div className="online__popup-inner" style={{ background: `radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, ${bgColor} 100%)`}}>
+      <div
+        className="online__popup-inner"
+        style={{ background: `radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, ${bgColor} 100%)` }}
+      >
         <div className="online__popup-top">
           <span onClick={closePopup}>+</span>
         </div>
@@ -31,10 +33,18 @@ const Popup = ({ popupObj, closePopup, bgColor }) => {
           </p>
         </div>
         <div className="online__popup-controls">
-          <button className="online__popup-controls--start" style={{ color: bgColor }} onClick={handleStartClick}>
+          <button
+            className="online__popup-controls--start"
+            style={{ color: bgColor }}
+            onClick={handleStartClick}
+          >
             START
           </button>
-          <button className="online__popup-controls--cancel" style={{ color: 'black' }} onClick={closePopup}>
+          <button
+            className="online__popup-controls--cancel"
+            style={{ color: 'black' }}
+            onClick={closePopup}
+          >
             CANCEL
           </button>
           <button
@@ -44,21 +54,22 @@ const Popup = ({ popupObj, closePopup, bgColor }) => {
             {tutorialVisible ? 'СКРЫТЬ TUTORIAL' : 'TUTORIAL'}
           </button>
           {tutorialVisible && (
-            <div className="online__popup-video-tutorial">
-              {/* <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/gGl92ThhoVs"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe> */}
-              <video width="260" height="150" autoPlay muted playsInline controls>
-                <source src={popupObj.tutorialVideo} type="video/mp4" />
+            <div className="online__popup-video-tutorial">              
+              <video
+                width="260"
+                height="150"
+                autoPlay
+                muted
+                playsInline
+                loop
+                controls
+                src={popupObj.tutorialVideo}
+                type="video/mp4"
+              >
+                {/* <source  /> */}
               </video>
             </div>
           )}
-          
         </div>
       </div>
     </div>
