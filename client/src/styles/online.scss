@@ -265,6 +265,27 @@
   }
 }
 
+.online__start-video-music{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  svg{
+    path {
+      fill: #fd6c21;
+    }
+  }
+
+  svg:hover {
+    path {
+      fill: rgb(90, 28, 169);
+    }    
+  }
+}
+
 .online__start-video-countdown{
   width: 300px;
   height: 150px;  
