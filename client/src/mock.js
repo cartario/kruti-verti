@@ -240,46 +240,46 @@ const sessions = [{
   title: "Indian step",
   backgroundColor: "purple",
   tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610200031/kruti-verti/online/indian-tut_cnwmov.mp4",
-  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610174175/kruti-verti/training-indianstep_eigtqd.mp4",
+  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610201203/kruti-verti/online/indian-loop_od7vup.mp4",
 //   backgroundImage: bookImg
 },
 {
   _id: '2',
   title: "Sixstep",
   backgroundColor: "#1FA91C",
-  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610173177/kruti-verti/tutorial-sixstep_recjhz.mp4",
-  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610173171/kruti-verti/training-sixstep_cum6xo.mp4",
+  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610201217/kruti-verti/online/sixstep-tut_dvsuyz.mp4",
+  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610201204/kruti-verti/online/sixstep-loop_uv8jbr.mp4",
   // backgroundImage: bookImg
 },
 {
   _id: '3',
   title: "Swipes",
   backgroundColor: "#A91C82",
-  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610175566/kruti-verti/tutorial-swipes_bkaw3h.mp4",
-  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610175563/kruti-verti/training-swipes_gkmefn.mp4",
+  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610201260/kruti-verti/online/swipes-tut_iz7mlx.mp4",
+  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610201209/kruti-verti/online/swipes-loop_p5cz3j.mp4",
   // backgroundImage: bookImg
 },
 {
   _id: '4',
   title: "CoffeeMill",
   backgroundColor: "#E86D14",
-  tutorialVideo: coffeMillTutorial,
-  trainingVideo: coffeMillTrain,
+  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610201209/kruti-verti/online/coffee-tut_u0jdsn.mp4",
+  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610201206/kruti-verti/online/coffee-loop_befkqe.mp4",
   // backgroundImage: bookImg
 },
 {
   _id: '5',
   title: "Baby Freeze",
   backgroundColor: "#25F0FD",
-  tutorialVideo: babyTutorial,
-  trainingVideo: babyTrain,
+  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610201214/kruti-verti/online/baby-tut_pfva4l.mp4",
+  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610201199/kruti-verti/online/baby-loop_t3se4e.mp4",
   // backgroundImage: bookImg
 },
 {
   _id: '6',
   title: "3-Step",
   backgroundColor: "#FF505A",
-  tutorialVideo: threeTutorial,
-  trainingVideo: threeTrain,
+  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610201210/kruti-verti/online/3-tut_tptdhr.mp4",
+  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610201196/kruti-verti/online/3-loop_fjdfck.mp4",
 }
 ];
