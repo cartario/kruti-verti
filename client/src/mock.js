@@ -228,38 +228,50 @@ export const offersDataForStudios = [
 export 
 const sessions = [{
   _id: '1',
-  title: "Toprock",
+  title: "Indian step",
   backgroundColor: "purple",
+  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610169647/kruti-verti/tutorial-indian-step_vcfa4c.mp4",
+  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610174175/kruti-verti/training-indianstep_eigtqd.mp4",
 //   backgroundImage: bookImg
 },
 {
   _id: '2',
-  title: "Footwork",
+  title: "Sixstep",
   backgroundColor: "#1FA91C",
+  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610173177/kruti-verti/tutorial-sixstep_recjhz.mp4",
+  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610173171/kruti-verti/training-sixstep_cum6xo.mp4",
   // backgroundImage: bookImg
 },
 {
   _id: '3',
-  title: "Powermove",
+  title: "Swipes",
   backgroundColor: "#A91C82",
+  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610175566/kruti-verti/tutorial-swipes_bkaw3h.mp4",
+  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610175563/kruti-verti/training-swipes_gkmefn.mp4",
   // backgroundImage: bookImg
 },
 {
   _id: '4',
   title: "Freeze",
   backgroundColor: "#E86D14",
+  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610169647/kruti-verti/tutorial-indian-step_vcfa4c.mp4",
+  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610169647/kruti-verti/tutorial-indian-step_vcfa4c.mp4",
   // backgroundImage: bookImg
 },
 {
   _id: '5',
   title: "Combo",
   backgroundColor: "#25F0FD",
+  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610169647/kruti-verti/tutorial-indian-step_vcfa4c.mp4",
+  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610169647/kruti-verti/tutorial-indian-step_vcfa4c.mp4",
   // backgroundImage: bookImg
 },
 {
   _id: '6',
   title: "Super Combo",
   backgroundColor: "#FF505A",
+  tutorialVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610169647/kruti-verti/tutorial-indian-step_vcfa4c.mp4",
+  trainingVideo: "https://res.cloudinary.com/dxioiveim/video/upload/v1610169647/kruti-verti/tutorial-indian-step_vcfa4c.mp4",
   // backgroundImage: bookImg
 }
 ];

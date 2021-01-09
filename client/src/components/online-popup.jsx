@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import videoSrc from '../media/online/tutorial-indian-step.mp4'
 
 const Popup = ({ popupObj, closePopup, bgColor }) => {
   const { title, levelTitle, sessionNumber } = popupObj;
@@ -44,14 +45,17 @@ const Popup = ({ popupObj, closePopup, bgColor }) => {
           </button>
           {tutorialVisible && (
             <div className="online__popup-video-tutorial">
-              <iframe
+              {/* <iframe
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/gGl92ThhoVs"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
-              ></iframe>
+              ></iframe> */}
+              <video width="260" height="150" autoPlay muted playsInline controls>
+                <source src={popupObj.tutorialVideo} type="video/mp4" />
+              </video>
             </div>
           )}
           

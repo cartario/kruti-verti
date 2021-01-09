@@ -3,7 +3,7 @@ import { useHistory, useParams } from 'react-router-dom';
 import NavOnline from '../components/online-nav';
 import TopOnline from '../components/online-top';
 import BottomOnline from '../components/online-bottom';
-import videoSrc from '../media/online/test-task.mp4';
+import videoSrc from '../media/online/tutorial-indian-step.mp4';
 import { sessions } from '../mock';
 
 const Result = () => {
@@ -56,6 +56,7 @@ const StartPage = () => {
   const [countTimer, setCountTimer] = React.useState(null);
 
   const currentSession = sessions.find((session) => session._id === id);
+  
 
   const handleClose = () => {
     history.goBack();
@@ -98,8 +99,8 @@ const StartPage = () => {
               </svg>
             </h2>
             {runingTimer ? (
-              <video width="260" height="150" autoPlay muted playsInline>
-                <source src={videoSrc} type="video/mp4" />
+              <video width="260" height="150" autoPlay loop muted playsInline controls>
+                <source src={currentSession.trainingVideo} type="video/mp4" />
               </video>
             ) : (
               <div className="online__start-video-countdown">
