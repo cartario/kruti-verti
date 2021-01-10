@@ -14,6 +14,7 @@ import Coach from './components/coach';
 import Gallery from './components/gallery';
 import Offers from './components/offers';
 import MapBlock from './components/map';
+import WhatsApp from './components/whatsapp';
 import Page1 from './pages/page1';
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
@@ -65,6 +66,7 @@ function App() {
           <Gallery title="Залы" galleryData={galleryPlaceData} />
           <Offers data={offersData}/>
           <MapBlock/>
+          <WhatsApp/>
         </Route>
         <Route path="/p1" exact component={Page1} />
         <Route path="/p2" exact component={Page2} />

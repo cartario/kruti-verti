@@ -6,8 +6,10 @@ import Offers from '../components/offers';
 const Page1 = () => {
   return (
     <div>
+      <div className="offer-page__nav">
+        <Link style={{color: "white"}} to="/">Назад</Link>
+      </div>
       
-      <Link to="/">Назад</Link>
       
       <Offers data={offersData}/>
       

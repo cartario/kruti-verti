@@ -75,6 +75,23 @@
   }
 }
 
+.online__bottom-menu{
+  li{
+    margin: 1px;
+    padding: 15px;
+    background: orange;
+    a{
+      padding: 15px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+    &:hover{
+      background: darken(orange, 10%);
+    }
+  }
+}
+
 .online__content {
   // height: 1000px;
 

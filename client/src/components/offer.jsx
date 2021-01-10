@@ -23,9 +23,7 @@ export default function ({
   const handleClick = (_id) => {
     history.push(`/offer/${_id}`);
   };
-
-  console.log(pricePer);
-
+  
   return (
     <article
       onClick={() => handleClick(_id)}

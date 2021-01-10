@@ -3,7 +3,7 @@ import Offer from '../components/offer';
 import ShowMoreBtn from '../components/show-more';
 import {useHistory} from 'react-router-dom';
 
-const Offers = ({data}) => {
+const Offers = ({data,title}) => {
   const CLICK_BY_BTN = 3;
   const [visibleItems, setVisibleItems] = React.useState(3);
   const history = useHistory();
@@ -20,7 +20,7 @@ const Offers = ({data}) => {
 
   return (
     <div className="offers">
-      <h2>Предложения</h2>
+      <h2>Предложения {title}</h2>
       <ul className="offers__list">
         {data.slice(0, visibleItems).map((item) => (
           <li key={item._id} className="offers__item">

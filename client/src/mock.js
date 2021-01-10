@@ -60,8 +60,8 @@ export const offersData = [
     description: '-Бесплатная подписка 1 мес -1 индивидуальная тренировка -3 новых элемента',
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219219/kruti-verti/offers/maxresdefault_1_k6acla.jpg',
-       price: '2000руб.',
-       pricePer: '45 мин',
+       price: '3000руб.',
+       pricePer: '60 мин',
        longTimeMonths: null,
        subscriptionFree: null,
        personalSessions: '1',
@@ -140,13 +140,13 @@ export const offersData = [
   },
   {
     _id: '7',
-    name: 'ИНДИВ-60',
+    name: 'ИНДИВ',
     title: '+15 к опыту',
     description: '-Бесплатная подписка 1 мес, 1 индивидуальная тренировка 60 мин',
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219218/kruti-verti/offers/brakedance-1229045_1280_v8bi5z.jpg',
-      price: '3000руб.',
-      pricePer: '60 мин',
+      price: '4000руб.',
+      pricePer: '90 мин',
        longTimeMonths: null,
        subscriptionFree: "1",
        personalSessions: '1',
@@ -160,7 +160,7 @@ export const offersData = [
       '-Бесплатная подписка 1 мес -1 индивидуальная тренировка -3 новых элемента, 1 онлайн тренировка',
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219218/kruti-verti/offers/brakedance-1250354_1280_epy5yp.jpg',
-      price: '2500руб.',
+      price: '4500руб.',
       pricePer: 'курс',
        longTimeMonths: "1",
        subscriptionFree: null,

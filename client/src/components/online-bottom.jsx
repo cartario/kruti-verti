@@ -41,7 +41,7 @@ const BottomOnline = () => {
           <li>
             <Dialog
             mark={
-              <ul>
+              <ul className="online__bottom-menu">
                 <li>
                   <a href="/">Главная</a>
                 </li>
