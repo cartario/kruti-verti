@@ -13,7 +13,7 @@ const OfferPage = () => {
 
   return (
     <div className="offer-page">
-     <a href="#p1" onClick={handleClick}>Goback</a>
+     <p className="offer-page__nav" onClick={handleClick}>Goback</p>
       <img width="200" src={currentOffer.imgUrl}/>
       <p>name: {currentOffer.name}</p>
       <p>title: {currentOffer.title}</p>

@@ -52,7 +52,7 @@ const BottomOnline = () => {
                   <a href="/p2">ONLINE</a>
                 </li>
                 <li>
-                  <a href="/p3">Для студий и тренеров</a>
+                  <a href="/p3">Для студий</a>
                 </li>
               </ul>
             }

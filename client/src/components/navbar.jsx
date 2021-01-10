@@ -16,7 +16,7 @@ const MenuItems = [
     link: '/p2',
   },
   {
-    title: 'Для студий и тренеров',
+    title: 'Для студий',
     link: '/p3',
   }
 ];

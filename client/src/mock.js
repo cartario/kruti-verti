@@ -56,21 +56,27 @@ export const offersData = [
     _id: '1',
     name: 'Первые шаги',
     title: '+10 к опыту',
+   
     description: '-Бесплатная подписка 1 мес -1 индивидуальная тренировка -3 новых элемента',
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219219/kruti-verti/offers/maxresdefault_1_k6acla.jpg',
        price: '2000руб.',
+       pricePer: '45 мин',
+       longTimeMonths: null,
+       subscriptionFree: null,
+       personalSessions: '1',
+       newElements: '2',
   },
-  {
-    _id: '2',
-    name: 'Классик',
-    title: '+15 к опыту',
-    description: '-Бесплатная подписка 1 мес -4 индивидуальных тренировки -8 новых элементов',
-    imgUrl:
-      'https://res.cloudinary.com/dxioiveim/image/upload/v1610219219/kruti-verti/offers/home1_c3vaxf.jpg',
-       price: '9499руб.',
-    disabled: true,
-  },
+  // {
+  //   _id: '2',
+  //   name: 'Классик',
+  //   title: '+15 к опыту',
+  //   description: '-Бесплатная подписка 1 мес -4 индивидуальных тренировки -8 новых элементов',
+  //   imgUrl:
+  //     'https://res.cloudinary.com/dxioiveim/image/upload/v1610219219/kruti-verti/offers/home1_c3vaxf.jpg',
+  //      price: '9499руб.',
+  //   disabled: true,
+  // },
   {
     _id: '3',
     name: 'Быстрый старт',
@@ -79,6 +85,11 @@ export const offersData = [
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219218/kruti-verti/offers/maxresdefault_sx9gjd.jpg',
       price: '5499руб.',
+      pricePer: 'курс',
+       longTimeMonths: '1',
+       subscriptionFree: '1',
+       personalSessions: '2',
+       newElements: '6',
   },
   {
     _id: '4',
@@ -88,6 +99,12 @@ export const offersData = [
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219219/kruti-verti/offers/home2_cmpxqj.jpg',
       price: '500руб.',
+      pricePer: 'мес',
+       longTimeMonths: null,
+       subscriptionFree: null,
+       personalSessions: null,
+       newElements: null,
+       type: 'sub',
   },
   {
     _id: '5',
@@ -97,6 +114,12 @@ export const offersData = [
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219217/kruti-verti/offers/a14d5ebdd0eb7fcffef366dd02464041_y70rbk.jpg',
       price: '1200 руб.',
+      pricePer: '3 мес',
+       longTimeMonths: null,
+       subscriptionFree: null,
+       personalSessions: null,
+       newElements: null,
+       type: 'sub',
   },
   {
     _id: '6',
@@ -107,7 +130,13 @@ export const offersData = [
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219218/kruti-verti/offers/fDyU09_tp7r3f.jpg',
       price: '6500руб.',
+      pricePer: 'курс',
+       longTimeMonths: '1',
+       subscriptionFree: '1',
+       personalSessions: '3',
+       newElements: '6',
     disabled: true,
+
   },
   {
     _id: '7',
@@ -117,6 +146,11 @@ export const offersData = [
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219218/kruti-verti/offers/brakedance-1229045_1280_v8bi5z.jpg',
       price: '3000руб.',
+      pricePer: '60 мин',
+       longTimeMonths: null,
+       subscriptionFree: "1",
+       personalSessions: '1',
+       newElements: '3',
   },
   {
     _id: '8',
@@ -127,6 +161,12 @@ export const offersData = [
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219218/kruti-verti/offers/brakedance-1250354_1280_epy5yp.jpg',
       price: '2500руб.',
+      pricePer: 'курс',
+       longTimeMonths: "1",
+       subscriptionFree: null,
+       personalSessions: '1',
+       newElements: '2',
+       onlineSessions: '1'
   },
   {
     _id: '9',
@@ -136,6 +176,12 @@ export const offersData = [
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219217/kruti-verti/offers/9261752e196565a7d40bdcfb8f257726d403088er1-750-469v2_hq_swqzuv.jpg',
       price: '800руб.',
+      pricePer: '45 мин',
+       longTimeMonths: null,
+       subscriptionFree: null,
+       personalSessions: null,
+       newElements: null,
+       type: 'online',
   },
   {
     _id: '10',
@@ -146,6 +192,12 @@ export const offersData = [
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219645/kruti-verti/offers/girl-3691314_1920_ekqriv.jpg',
       price: 'Бесплатно',
+      pricePer: null,
+       longTimeMonths: null,
+       subscriptionFree: null,
+       personalSessions: null,
+       newElements: '3',
+       type: 'group',
   },
   {
     _id: '11',
@@ -156,6 +208,12 @@ export const offersData = [
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219643/kruti-verti/offers/3637c326efa632fa85666a1d99257abf67cacb94r1-660-438v2_hq_jzid9f.jpg',
       price: '3400руб.',
+      pricePer: 'абонемент',
+       longTimeMonths: '1',
+       subscriptionFree: '1',
+       personalSessions: null,
+       newElements: '5',
+       type: 'group',
   },
   {
     _id: '12',
@@ -166,6 +224,12 @@ export const offersData = [
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219646/kruti-verti/offers/maxresdefault_2_b6q34d.jpg',
       price: '11000руб.',
+      pricePer: 'курс',
+       longTimeMonths: '2',
+       subscriptionFree: '2',
+       personalSessions: '4',
+       newElements: '8',
+       onlineSessions: '4',
     disabled: true,
   },
 ];
@@ -186,49 +250,49 @@ export const offersDataForStudios = [
     description: 'Подходит для студий и школ танцев. Размещение в течение 1 мес в базе',
     imgUrl: 'https://psy-files.ru/wp-content/uploads/e/3/0/e3061ed9de1dd5fb98f8508f8b0afdaa.jpeg',
     price: '5000руб.',
-    disabled: true,
+    disabled: false,
   },
-  {
-    _id: '103',
-    name: 'Подписка для тренеров - 1 мес',
-    title: '',
-    description: 'Подходит для тренеров. Размещение в течение 1 мес в базе',
-    imgUrl: 'https://psy-files.ru/wp-content/uploads/e/3/0/e3061ed9de1dd5fb98f8508f8b0afdaa.jpeg',
-    price: '3000руб.',
-  },
-  {
-    _id: '104',
-    name: 'Подписка для студий - 3 мес',
-    title: '',
-    description: 'Подходит для студий и школ танцев. Размещение в течение 3 мес в базе',
-    imgUrl: 'https://psy-files.ru/wp-content/uploads/e/3/0/e3061ed9de1dd5fb98f8508f8b0afdaa.jpeg',
-    price: '4000руб.',
-    disabled: true,
-  },
-  {
-    _id: '105',
-    name: 'Подписка для тренеров - 3 мес',
-    title: '',
-    description: 'Подходит для тренеров. Размещение в течение 3 мес в базе',
-    imgUrl: 'https://psy-files.ru/wp-content/uploads/e/3/0/e3061ed9de1dd5fb98f8508f8b0afdaa.jpeg',
-    price: '2000руб.',
-  },
-  {
-    _id: '106',
-    name: 'Подписка для студий - 6 мес',
-    title: '',
-    description: 'Подходит для студий и школ танцев. Размещение в течение 6 мес в базе',
-    imgUrl: 'https://psy-files.ru/wp-content/uploads/e/3/0/e3061ed9de1dd5fb98f8508f8b0afdaa.jpeg',
-    price: '3000руб.',
-  },
-  {
-    _id: '107',
-    name: 'Подписка для тренеров - 6 мес',
-    title: '',
-    description: 'Подходит для тренеров. Размещение в течение 6 мес в базе',
-    imgUrl: 'https://psy-files.ru/wp-content/uploads/e/3/0/e3061ed9de1dd5fb98f8508f8b0afdaa.jpeg',
-    price: '1000руб.',
-  },
+  // {
+  //   _id: '103',
+  //   name: 'Подписка для тренеров - 1 мес',
+  //   title: '',
+  //   description: 'Подходит для тренеров. Размещение в течение 1 мес в базе',
+  //   imgUrl: 'https://psy-files.ru/wp-content/uploads/e/3/0/e3061ed9de1dd5fb98f8508f8b0afdaa.jpeg',
+  //   price: '3000руб.',
+  // },
+  // {
+  //   _id: '104',
+  //   name: 'Подписка для студий - 3 мес',
+  //   title: '',
+  //   description: 'Подходит для студий и школ танцев. Размещение в течение 3 мес в базе',
+  //   imgUrl: 'https://psy-files.ru/wp-content/uploads/e/3/0/e3061ed9de1dd5fb98f8508f8b0afdaa.jpeg',
+  //   price: '4000руб.',
+  //   disabled: true,
+  // },
+  // {
+  //   _id: '105',
+  //   name: 'Подписка для тренеров - 3 мес',
+  //   title: '',
+  //   description: 'Подходит для тренеров. Размещение в течение 3 мес в базе',
+  //   imgUrl: 'https://psy-files.ru/wp-content/uploads/e/3/0/e3061ed9de1dd5fb98f8508f8b0afdaa.jpeg',
+  //   price: '2000руб.',
+  // },
+  // {
+  //   _id: '106',
+  //   name: 'Подписка для студий - 6 мес',
+  //   title: '',
+  //   description: 'Подходит для студий и школ танцев. Размещение в течение 6 мес в базе',
+  //   imgUrl: 'https://psy-files.ru/wp-content/uploads/e/3/0/e3061ed9de1dd5fb98f8508f8b0afdaa.jpeg',
+  //   price: '3000руб.',
+  // },
+  // {
+  //   _id: '107',
+  //   name: 'Подписка для тренеров - 6 мес',
+  //   title: '',
+  //   description: 'Подходит для тренеров. Размещение в течение 6 мес в базе',
+  //   imgUrl: 'https://psy-files.ru/wp-content/uploads/e/3/0/e3061ed9de1dd5fb98f8508f8b0afdaa.jpeg',
+  //   price: '1000руб.',
+  // },
 ];
 
 
