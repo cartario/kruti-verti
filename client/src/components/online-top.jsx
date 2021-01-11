@@ -1,5 +1,6 @@
 import React from 'react';
-import {Operations} from '../store/main/operations';
+import { Operations } from '../store/main/operations';
+import {ActionCreators} from '../store/main/actions';
 import { useDispatch, useSelector } from 'react-redux';
 import Dialog from '../components/material-dialog';
 import starImg from '../media/online/star.png';
@@ -8,19 +9,44 @@ import feedbackImg from '../media/online/feedback.png';
 import logoImg from '../media/logo.png';
 import infoImg from '../media/online/info.png';
 
-
-const TopOnline = () => {
+const Feedback = () => {
+  const [feedback, setFeedback] = React.useState('');
   const dispatch = useDispatch();
-  const score = useSelector(({main}) => main.score);
-  const [feedback, setFeedback] = React.useState('');  
+  const isLoadingFeedback = useSelector(({main})=>main.isLoadingFeedback);
+  const isSuccessSentFeedback = useSelector(({main})=>main.isSuccessSentFeedback);
 
   const handleFeedback = (e) => {
     setFeedback(e.target.value);
   };
 
-  const handleSubmit = ()=> {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     dispatch(Operations.setFeedback(feedback));
+    setFeedback('');
+  };
+
+  if(isSuccessSentFeedback){
+    setTimeout(()=>{
+      dispatch(ActionCreators.isSuccessSentFeedback(false))
+    },3000)
   }
+
+  return (
+    <form 
+      onSubmit={handleSubmit}>
+        <div className="online__top-feedback">
+          <textarea placeholder="введите сообщение" value={feedback} onChange={handleFeedback} required />
+          { isSuccessSentFeedback ? <p className="online__top-feedback-tost">Спасибо за сообщение!</p> : ""}
+           <button disabled={isLoadingFeedback}>{isLoadingFeedback ?  "...Loading":  'Отправить сообщение'}</button>
+        </div>
+      
+    </form>
+  );
+};
+
+const TopOnline = () => {
+  const dispatch = useDispatch();
+  const score = useSelector(({ main }) => main.score);
 
   React.useEffect(() => {
     dispatch(Operations.fetchScore());
@@ -43,7 +69,6 @@ const TopOnline = () => {
           </li>
           <li>
             <Dialog
-            
               transition="down"
               description="
               Каждые 60 очков - доступно новое задание.
@@ -56,25 +81,18 @@ const TopOnline = () => {
             </Dialog>
           </li>
           <li>
-          <Dialog
+            <Dialog
               transition="left"
               description="
               Можно задать любой вопрос, исправить неточность, похвалить или похейтить, разрешается писать абсолютно все"
               title="Обратная связь FeedBack"
-              mark={
-              <form onSubmit={handleSubmit}>
-              <input place="введите сообщение" value={feedback} onChange={handleFeedback} required/>
-              <button>Отправить сообщение</button>
-              </form>
-              
-              }
+              mark={<Feedback />}
             >
-            <img style={{maxWidth: "75px"}} src={logoImg} alt="online-img" />
-            
-             </Dialog>
+              <img style={{ maxWidth: '75px' }} src={logoImg} alt="online-img" />
+            </Dialog>
           </li>
           <li>
-          <Dialog
+            <Dialog
               transition="left"
               description="Это раздел Онлайн-подписки. В бесплатной версии вам доступно 6 обучающих видео первого уровня.
               Задания структурированы и имеют несколько уровней сложности, чтобы открыть               
@@ -91,9 +109,8 @@ const TopOnline = () => {
               "
               title="Как пользоваться приложением?"
             >
-            <img width="40" style={{maxWidth: "75px"}} src={infoImg} alt="online-img" />
-            
-             </Dialog>
+              <img width="40" style={{ maxWidth: '75px' }} src={infoImg} alt="online-img" />
+            </Dialog>
           </li>
         </ul>
       </div>

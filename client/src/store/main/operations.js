@@ -38,6 +38,8 @@ export const Operations = {
   setFeedback: (value) => (dispatch) => {
     
     dispatch(ActionCreators.isLoaded(false));
+    dispatch(ActionCreators.isSuccessSentFeedback(false));
+    dispatch(ActionCreators.isLoadingFeedback(true));
     fetch(`/api/main/create`, {
       method: 'POST',
       body: JSON.stringify({ feedback: value }),
@@ -48,7 +50,9 @@ export const Operations = {
       .then((res) => res.json())
       .then((json) => {
         // dispatch(ActionCreators.setScore(json));
-        dispatch(ActionCreators.isLoaded(true));
+        // dispatch(ActionCreators.isLoaded(true));
+        dispatch(ActionCreators.isLoadingFeedback(false));
+        dispatch(ActionCreators.isSuccessSentFeedback(true));
       })
       .catch((err) => {
         console.log(err);

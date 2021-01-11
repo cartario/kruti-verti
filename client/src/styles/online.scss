@@ -33,6 +33,45 @@
   background: white;
 }
 
+.online__top-feedback{
+  display: flex;
+  flex-direction: column;
+
+  textarea{
+    width: 100%;
+    min-height: 160px;
+    margin: 10px auto;   
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 15px;
+    outline: none;
+  }
+
+  button {
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 15px;
+    background: #fd6c21;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:hover{
+      background: darken(#fd6c21, 10)
+    }
+  }
+}
+
+.online__top-feedback-tost{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+}
+
 .online__top,
 .online__bottom {
   position: sticky;

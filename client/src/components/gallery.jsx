@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay=true }) => {
+const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay = true }) => {
   const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {
-    if(autoPlay){
+    if (autoPlay) {
       setInterval(handleIncrementCount, 3000 * (1 + Math.random()));
     }
   }, [autoPlay]);
@@ -37,24 +37,34 @@ const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay=t
         <ul className="gallery__slides" style={{ transform: `translateX(-${320 * count}px)` }}>
           <li
             className="gallery__slide"
+            style={{ backgroundImage: `url(${galleryData && galleryData[1].url})` }}
+          >
+            {children}
+          </li>
+          <li
+            className="gallery__slide"
             style={{ backgroundImage: `url(${galleryData && galleryData[0].url})` }}
           ></li>
 
           <li
             className="gallery__slide"
-            style={{ backgroundImage: `url(${galleryData && galleryData[1].url})` }}
+            // style={{ backgroundImage: `url(${galleryData && galleryData[3].url})` }}
           >
-            {children}
+            <iframe
+              title="promo"
+              width="auto"
+              height="100%"
+              src="https://www.youtube.com/embed/Pgv6Dt8cuvE"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              
+            ></iframe>
           </li>
 
           <li
             className="gallery__slide"
             style={{ backgroundImage: `url(${galleryData && galleryData[2].url})` }}
-          ></li>
-
-          <li
-            className="gallery__slide"
-            style={{ backgroundImage: `url(${galleryData && galleryData[3].url})` }}
           ></li>
 
           <li

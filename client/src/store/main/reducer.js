@@ -3,7 +3,9 @@ import { ActionTypes } from './actions';
 const initialState = {
   isLoaded: false,
   feedbackIsLoading: false,
-  score: ""
+  score: "",
+  isLoadingFeedback: false,
+  isSuccessSentFeedback: false
 };
 
 const reducer = (state = initialState, action) => {
@@ -15,6 +17,10 @@ const reducer = (state = initialState, action) => {
       return { ...state, isLoaded: payload };
     case ActionTypes.SET_SCORE:
       return { ...state, score: payload };
+    case ActionTypes.IS_LOADING_FEEDBACK:
+      return { ...state, isLoadingFeedback: payload };
+    case ActionTypes.IS_SUCCESS_SENT_FEEDBACK:
+      return { ...state, isSuccessSentFeedback: payload };
     default:
       return state;
   }
