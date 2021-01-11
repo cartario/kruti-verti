@@ -8,9 +8,19 @@ import feedbackImg from '../media/online/feedback.png';
 import logoImg from '../media/logo.png';
 import infoImg from '../media/online/info.png';
 
+
 const TopOnline = () => {
   const dispatch = useDispatch();
-  const score = useSelector(({main}) => main.score);  
+  const score = useSelector(({main}) => main.score);
+  const [feedback, setFeedback] = React.useState('');  
+
+  const handleFeedback = (e) => {
+    setFeedback(e.target.value);
+  };
+
+  const handleSubmit = ()=> {
+    dispatch(Operations.setFeedback(feedback));
+  }
 
   React.useEffect(() => {
     dispatch(Operations.fetchScore());
@@ -51,6 +61,13 @@ const TopOnline = () => {
               description="
               Можно задать любой вопрос, исправить неточность, похвалить или похейтить, разрешается писать абсолютно все"
               title="Обратная связь FeedBack"
+              mark={
+              <form onSubmit={handleSubmit}>
+              <input place="введите сообщение" value={feedback} onChange={handleFeedback} required/>
+              <button>Отправить сообщение</button>
+              </form>
+              
+              }
             >
             <img style={{maxWidth: "75px"}} src={logoImg} alt="online-img" />
             

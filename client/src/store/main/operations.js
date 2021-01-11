@@ -35,4 +35,23 @@ export const Operations = {
         console.log(err);
       });
   },
+  setFeedback: (value) => (dispatch) => {
+    
+    dispatch(ActionCreators.isLoaded(false));
+    fetch(`/api/main/create`, {
+      method: 'POST',
+      body: JSON.stringify({ feedback: value }),
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    })
+      .then((res) => res.json())
+      .then((json) => {
+        // dispatch(ActionCreators.setScore(json));
+        dispatch(ActionCreators.isLoaded(true));
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  },
 };
