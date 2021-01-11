@@ -4,15 +4,11 @@ import axios from 'axios';
 export const Operations = {
   fetchScore: () => (dispatch) => {
     dispatch(ActionCreators.isLoaded(false));
-    fetch(`/api/main/score`, {body: null, headers: {
-      'Content-Type': 'application/json'
-    }})
-      .then((res) => {
-        
+    fetch(`/api/main/score`)
+      .then((res) => {        
         return res.json()
       })
-      .then((json) => {
-        
+      .then((json) => {        
         dispatch(ActionCreators.setScore(json));
         dispatch(ActionCreators.isLoaded(true));
       })

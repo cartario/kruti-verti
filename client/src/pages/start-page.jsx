@@ -23,8 +23,8 @@ const Result = () => {
   const score = useSelector(({main})=>main.score);  
   const history = useHistory();
   const INCREMENT_SCORES = {
-    success: 5,
-    fail: 6,
+    success: 10,
+    fail: 12,
   }
 
   const handleSuccess = () => {
@@ -121,7 +121,7 @@ const StartPage = () => {
   const [muted, setMuted] = React.useState(true);
   const videoRef = useRef();
   const audioRef = useRef();
-  const TRAINING_TIME = 1;
+  const TRAINING_TIME = 60;
 
   const currentSession = sessions.find((session) => session._id === id);
 

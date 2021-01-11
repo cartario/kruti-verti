@@ -1,16 +1,19 @@
 import React from 'react';
 import PopupMaterial from './popupMaterial';
 import Popup from './online-popup';
+import {useSelector} from 'react-redux';
 
-const Session = ({ id, index, title, levelTitle, backgroundColor, backgroundImage, tutorialVideo }) => {
+const Session = ({ id, index, title, levelTitle, backgroundColor, backgroundImage, tutorialVideo}) => {
+  const score = useSelector(({main})=>main.score);
   const [open, setOpen] = React.useState(false);
+  const availableAmount = 60* (index+1);
 
   const handleClosePopup = () => {
     setOpen((prev) => !prev);
   };
 
   return (
-    <li>
+    <li className={ Number(score)< availableAmount ? 'online--disabled' : ""}>
       <PopupMaterial open={open} setOpen={setOpen}>
         <Popup
           closePopup={handleClosePopup}

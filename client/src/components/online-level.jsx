@@ -20,6 +20,8 @@ const Level = ({ title, sessions, disabled }) => {
               id={session._id}
               backgroundColor={session.backgroundColor}
               backgroundImage={session.backgroundImage}
+              
+              
             />
           ))}
       </ul>

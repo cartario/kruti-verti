@@ -7,34 +7,14 @@ import eduImg from '../media/online/edu.png';
 import feedbackImg from '../media/online/feedback.png';
 import logoImg from '../media/logo.png';
 import infoImg from '../media/online/info.png';
-import useHttp from '../hooks/http.hook';
 
 const TopOnline = () => {
-  const {request} = useHttp(); 
   const dispatch = useDispatch();
   const score = useSelector(({main}) => main.score);  
-  const [score2, setScore2] = React.useState(null);
-
-  // const getScores = React.useCallback(async ()=>{
-  //   try {
-  //     const response = await request(`/api/main/score`);
-  //     setScore2(response);
-  //     console.log(response)
-  //   }
-  //   catch(err){}
-  // },[request]);
 
   React.useEffect(() => {
     dispatch(Operations.fetchScore());
   }, []);
-
-  // React.useEffect(()=>{
-  //   getScores();
-  // }, [getScores]);
-
-
-  
-
 
   return (
     <section className="online__top">
@@ -56,6 +36,7 @@ const TopOnline = () => {
             
               transition="down"
               description="
+              Каждые 60 очков - доступно новое задание.
               Шкала опыта показывает насколько хорошо ты прокачал навык. 
               Задания имеют несколько уровней сложности, чем больше опыта - тем более сложные задания становятся доступны"
               title="Опыт"
@@ -78,9 +59,10 @@ const TopOnline = () => {
           <li>
           <Dialog
               transition="left"
-              description="Это раздел Онлайн-подписк. В бесплатной версии вам доступно 6 обучающих видео.
-              Задания структурированы и имеют несколько уровней сложности, чтобы открыть новый уровень - необходимо выполнить все
-              задания текущего.
+              description="Это раздел Онлайн-подписки. В бесплатной версии вам доступно 6 обучающих видео первого уровня.
+              Задания структурированы и имеют несколько уровней сложности, чтобы открыть               
+              новый уровень - необходимо выполнить все
+              задания текущего. Чтобы открыть новое задание - добавь еще 60 очков опыта.
               В первую очередь необходимо посмотреть TUTORIAL, затем нажать START.
               Через 5 сек - начнется запуск видео(звук по умолчанию выключен).
               Повторяй за тренером движения в течении указанного времени,
