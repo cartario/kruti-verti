@@ -13,7 +13,7 @@ const MapBlock = () => {
               iconContent: 'JeeFox',
             }}
           />
-          <Placemark geometry={[55.718618, 37.623259]} options={{ iconColor: 'grey' }} onClick={()=>alert('yo')}/>
+          <Placemark geometry={[55.718618, 37.623259]} options={{ iconColor: 'grey' }} onClick={()=>{}}/>
         </Map>
       </div>
     </YMaps>

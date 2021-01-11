@@ -18,6 +18,10 @@ const MenuItems = [
   {
     title: 'Для студий',
     link: '/p3',
+  },
+  {
+    title: 'Обратная связь',
+    link: '/feedback',
   }
 ];
 

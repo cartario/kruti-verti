@@ -55,10 +55,11 @@ const Footer = () => {
         </ul>
         <p className="footer__copyright">
         <a href="http://instagram.com/vasiliyizrossii">
-          Разработка и дизайн
+        &copy; Разработка и дизайн
            </a>
           
         </p>
+        <p>Москва, 2021</p>
       </div>
     </footer>
   );

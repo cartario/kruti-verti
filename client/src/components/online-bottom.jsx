@@ -54,6 +54,9 @@ const BottomOnline = () => {
                 <li>
                   <a href="/p3">Для студий</a>
                 </li>
+                <li>
+                  <a href="/feedback">Обратная связь</a>
+                </li>
               </ul>
             }
               description=""

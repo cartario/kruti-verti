@@ -18,6 +18,7 @@ import WhatsApp from './components/whatsapp';
 import Page1 from './pages/page1';
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
+import FeedbackPage from './pages/feedback';
 import StartPage from './pages/start-page';
 import OfferPage from './pages/offer.jsx'
 import { galleryData, galleryPlaceData, offersData } from './mock';
@@ -72,6 +73,7 @@ function App() {
         <Route path="/p1" exact component={Page1} />
         <Route path="/p2" exact component={Page2} />
         <Route path="/p3" exact component={Page3} />
+        <Route path="/feedback" exact component={FeedbackPage} />
         <Route path="/offer/:id">
           <OfferPage />
         </Route>

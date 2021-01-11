@@ -37,7 +37,15 @@ ul {
   flex: 1 1 100%;
 }
 
+.container{
+  width: 60%;
+  margin: 0 auto;
+  padding: 15px;
 
+  @media(max-width: 600px){
+    width: 100%;
+  }
+}
 
 @import './navbar.scss';
 @import './welcome.scss';

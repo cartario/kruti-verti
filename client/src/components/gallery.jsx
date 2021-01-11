@@ -48,18 +48,18 @@ const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay =
 
           <li
             className="gallery__slide"
-            // style={{ backgroundImage: `url(${galleryData && galleryData[3].url})` }}
+            style={{ background: "black"}}
           >
-            <iframe
-              title="promo"
-              width="auto"
-              height="100%"
-              src="https://www.youtube.com/embed/Pgv6Dt8cuvE"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              
-            ></iframe>
+            <video
+              width="280"
+              height="200"
+              controls
+              autoPlay
+              muted
+              playsInline
+
+              src="https://res.cloudinary.com/dxioiveim/video/upload/v1610393724/kruti-verti/%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D0%B8%CC%86_JeeFox_nlbtls.mp4"
+            ></video>
           </li>
 
           <li

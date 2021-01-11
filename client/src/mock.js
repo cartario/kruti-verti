@@ -207,7 +207,7 @@ export const offersData = [
       '-Бесплатная подписка 1 мес -8 групповых занятий по абонементу в течении 1 мес. Необходимо предварительно уточнить свободные места.',
     imgUrl:
       'https://res.cloudinary.com/dxioiveim/image/upload/v1610219643/kruti-verti/offers/3637c326efa632fa85666a1d99257abf67cacb94r1-660-438v2_hq_jzid9f.jpg',
-      price: '3400руб.',
+      price: '3600руб.',
       pricePer: 'абонемент',
        longTimeMonths: '1',
        subscriptionFree: '1',
