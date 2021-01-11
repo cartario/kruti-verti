@@ -7,14 +7,33 @@ import eduImg from '../media/online/edu.png';
 import feedbackImg from '../media/online/feedback.png';
 import logoImg from '../media/logo.png';
 import infoImg from '../media/online/info.png';
+import useHttp from '../hooks/http.hook';
 
 const TopOnline = () => {
+  const {request} = useHttp(); 
   const dispatch = useDispatch();
-  const score = useSelector(({main}) => main.score);  
+  // const score = useSelector(({main}) => main.score);  
+  const [score2, setScore2] = React.useState(null);
+
+  const getScores = React.useCallback(async ()=>{
+    try {
+      const response = await request(`/api/main/score`);
+      setScore2(response)
+    }
+    catch(err){}
+  },[request]);
 
   React.useEffect(() => {
     dispatch(Operations.fetchScore());
   }, []);
+
+  React.useEffect(()=>{
+    getScores();
+  }, [getScores]);
+
+
+  
+
 
   return (
     <section className="online__top">
@@ -41,7 +60,7 @@ const TopOnline = () => {
               title="Опыт"
             >
               <img src={eduImg} alt="online-img" />
-              <span>{score}</span>
+              <span>{score2}</span>
             </Dialog>
           </li>
           <li>
