@@ -19,8 +19,7 @@ router.get('/score', async (req, res) => {
 });
 
 router.patch('/score', async (req, res) => {
-  try {
-    console.log('welcome')
+  try {    
     const score = await MainModel.findById("5ffbd3429d8fc612d08f8a24");
     score.score=req.body.score;
     
@@ -32,7 +31,7 @@ router.patch('/score', async (req, res) => {
     //   });
     // }
 
-    res.status(200).send(score.score);
+    res.status(200).json(score.score);
   } catch (err) {
     res.status(500).send(err);
   }
@@ -49,7 +48,7 @@ router.post('/create', async (req, res) => {
     //   });
     // }
 
-    res.status(200).send(test);
+    res.status(200).json(test);
   } catch (err) {
     res.status(500).send(err);
   }
