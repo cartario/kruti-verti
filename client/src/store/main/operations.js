@@ -4,11 +4,16 @@ import axios from 'axios';
 export const Operations = {
   fetchScore: () => (dispatch) => {
     dispatch(ActionCreators.isLoaded(false));
-    fetch(`/api/main/score`)
-      .then((res) => res.json())
-      .then((json) => {
-        dispatch(ActionCreators.setScore(json));
+    axios(`/api/main/score`)
+      .then((res) => {
+        dispatch(ActionCreators.setScore(res.data));
         dispatch(ActionCreators.isLoaded(true));
+        return res
+      })
+      .then((json) => {
+        
+        // dispatch(ActionCreators.setScore(json));
+        // dispatch(ActionCreators.isLoaded(true));
       })
       .catch((err) => {
         
