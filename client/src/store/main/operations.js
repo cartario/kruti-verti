@@ -11,7 +11,7 @@ export const Operations = {
         dispatch(ActionCreators.isLoaded(true));
       })
       .catch((err) => {
-        console.log(err);
+        
       });
   },
   setScore: (value) => (dispatch) => {
