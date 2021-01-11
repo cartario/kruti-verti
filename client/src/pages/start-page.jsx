@@ -28,12 +28,12 @@ const Result = () => {
   }
 
   const handleSuccess = () => {
-    dispatch(Operations.setScore(score + INCREMENT_SCORES.success));
+    dispatch(Operations.setScore(Number(score) + INCREMENT_SCORES.success));
     history.goBack();
   };
 
   const handleFail = () => {
-    dispatch(Operations.setScore(score + INCREMENT_SCORES.fail));
+    dispatch(Operations.setScore(Number(score) + INCREMENT_SCORES.fail));
     history.go(0);
   };
 

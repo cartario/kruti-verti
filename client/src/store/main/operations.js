@@ -4,7 +4,9 @@ import axios from 'axios';
 export const Operations = {
   fetchScore: () => (dispatch) => {
     dispatch(ActionCreators.isLoaded(false));
-    fetch(`/api/main/score`)
+    fetch(`/api/main/score`, {body: null, headers: {
+      'Content-Type': 'application/json'
+    }})
       .then((res) => {
         
         return res.json()
@@ -25,7 +27,7 @@ export const Operations = {
       method: 'PATCH',
       body: JSON.stringify({ score: value }),
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
     })
       .then((res) => res.json())

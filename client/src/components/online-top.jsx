@@ -12,24 +12,25 @@ import useHttp from '../hooks/http.hook';
 const TopOnline = () => {
   const {request} = useHttp(); 
   const dispatch = useDispatch();
-  // const score = useSelector(({main}) => main.score);  
+  const score = useSelector(({main}) => main.score);  
   const [score2, setScore2] = React.useState(null);
 
-  const getScores = React.useCallback(async ()=>{
-    try {
-      const response = await request(`/api/main/score`);
-      setScore2(response)
-    }
-    catch(err){}
-  },[request]);
+  // const getScores = React.useCallback(async ()=>{
+  //   try {
+  //     const response = await request(`/api/main/score`);
+  //     setScore2(response);
+  //     console.log(response)
+  //   }
+  //   catch(err){}
+  // },[request]);
 
   React.useEffect(() => {
     dispatch(Operations.fetchScore());
   }, []);
 
-  React.useEffect(()=>{
-    getScores();
-  }, [getScores]);
+  // React.useEffect(()=>{
+  //   getScores();
+  // }, [getScores]);
 
 
   
@@ -60,7 +61,7 @@ const TopOnline = () => {
               title="Опыт"
             >
               <img src={eduImg} alt="online-img" />
-              <span>{score2}</span>
+              <span>{score}</span>
             </Dialog>
           </li>
           <li>
