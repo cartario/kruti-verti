@@ -1,8 +1,15 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const app = express();
+const router = require('./routes/main.routes.js');
 const path = require('path');
+require('dotenv').config();
+
+const mongoURI = process.env.mongoURI;
 
 app.use(express.json({extended: true}));
+
+app.use('/api/main', router);
 
 app.use('/', express.static(path.join(__dirname, 'client', 'build')));
 
@@ -14,7 +21,10 @@ const PORT = 3001;
 
 async function start (){
   try {
-    
+    await mongoose.connect(mongoURI,  {
+      useNewUrlParser: true, 
+      useUnifiedTopology: true
+    });
     app.listen(PORT, ()=>{
       console.log(`server started on ${PORT} port`)
     });
