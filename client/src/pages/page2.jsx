@@ -5,7 +5,11 @@ import TopOnline from '../components/online-top';
 import BottomOnline from '../components/online-bottom';
 import Level from '../components/online-level';
 
+
 const ContentOnline = () => {
+
+
+
   return (
     <div className="online__content">
       <div className="online__container">

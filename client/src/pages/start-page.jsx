@@ -4,6 +4,9 @@ import NavOnline from '../components/online-nav';
 import TopOnline from '../components/online-top';
 import BottomOnline from '../components/online-bottom';
 import { sessions } from '../mock';
+import {Operations} from '../store/main/operations';
+import {useDispatch, useSelector} from 'react-redux';
+
 
 const audioUrls= [
   "https://res.cloudinary.com/dxioiveim/video/upload/v1610205678/kruti-verti/online/music/Erik_B._and_Rakim_-_Dont_Sweat_The_Technique_p29fmc.mp3",
@@ -16,13 +19,21 @@ const audioUrls= [
 const RANDOM_AUDIO_URL = audioUrls[Math.floor(Math.random() * audioUrls.length)];
 
 const Result = () => {
+  const dispatch = useDispatch();
+  const score = useSelector(({main})=>main.score);  
   const history = useHistory();
+  const INCREMENT_SCORES = {
+    success: 5,
+    fail: 6,
+  }
 
   const handleSuccess = () => {
+    dispatch(Operations.setScore(score + INCREMENT_SCORES.success));
     history.goBack();
   };
 
   const handleFail = () => {
+    dispatch(Operations.setScore(score + INCREMENT_SCORES.fail));
     history.go(0);
   };
 
@@ -71,8 +82,8 @@ const Result = () => {
         </svg>
       </button>
       <div className="online__start-timer-result-text">
-        <p>У меня все получилось (+5опыта)</p>
-        <p>Я могу еще лучше (+15опыта)</p>
+        <p >У меня все получилось (+{INCREMENT_SCORES.success}опыта)</p>
+        <p >Я могу еще лучше (+{INCREMENT_SCORES.fail}опыта)</p>
       </div>
     </div>
   );
@@ -102,6 +113,7 @@ const Timer = ({ time, handler }) => {
 };
 
 const StartPage = () => {
+  
   const history = useHistory();
   const id = useParams().id;
   const [runingTimer, setRuningTimer] = React.useState(false);
@@ -109,7 +121,7 @@ const StartPage = () => {
   const [muted, setMuted] = React.useState(true);
   const videoRef = useRef();
   const audioRef = useRef();
-  const TRAINING_TIME = 60;
+  const TRAINING_TIME = 1;
 
   const currentSession = sessions.find((session) => session._id === id);
 
@@ -152,6 +164,8 @@ const StartPage = () => {
       }, TRAINING_TIME * 1000);
     }
   }, [runingTimer, muted]);
+
+
 
   return (
     <div>

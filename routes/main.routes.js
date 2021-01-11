@@ -3,8 +3,7 @@ const router = Router();
 const MainModel = require('../models/Main');
 
 router.get('/score', async (req, res) => {
-  try {
-    
+  try {    
     const score = await MainModel.findById("5ffbd3429d8fc612d08f8a24");
     
     // if (!eventId) {
@@ -13,7 +12,7 @@ router.get('/score', async (req, res) => {
     //   });
     // }
 
-    res.status(200).send(score);
+    res.status(200).send(score.score);
   } catch (err) {
     res.status(500).send(err);
   }
@@ -21,7 +20,7 @@ router.get('/score', async (req, res) => {
 
 router.patch('/score', async (req, res) => {
   try {
-    
+    console.log('welcome')
     const score = await MainModel.findById("5ffbd3429d8fc612d08f8a24");
     score.score=req.body.score;
     
@@ -33,7 +32,7 @@ router.patch('/score', async (req, res) => {
     //   });
     // }
 
-    res.status(200).send(score);
+    res.status(200).send(score.score);
   } catch (err) {
     res.status(500).send(err);
   }
