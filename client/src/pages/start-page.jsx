@@ -23,8 +23,8 @@ const Result = () => {
   const score = useSelector(({main})=>main.score);  
   const history = useHistory();
   const INCREMENT_SCORES = {
-    success: 10,
-    fail: 12,
+    success: 12,
+    fail: 10,
   }
 
   const handleSuccess = () => {

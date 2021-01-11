@@ -170,13 +170,14 @@
 }
 
 .online__session-bar {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background: grey;
+  // background: grey;
 }
 
 .online__session-circle {
