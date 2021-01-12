@@ -57,7 +57,7 @@ const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay =
               autoPlay
               muted
               playsInline
-
+              loop
               src="https://res.cloudinary.com/dxioiveim/video/upload/v1610393724/kruti-verti/%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D0%B8%CC%86_JeeFox_nlbtls.mp4"
             ></video>
           </li>

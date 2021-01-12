@@ -71,6 +71,7 @@ function App() {
               autoPlay
               muted
               playsInline
+              loop
               src="https://res.cloudinary.com/dxioiveim/video/upload/v1610217874/kruti-verti/shapes-mob_-_SD_480p_k3wxyp.mov"
             ></video>
           </Gallery>
