@@ -37,7 +37,7 @@ const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay =
         <ul className="gallery__slides" style={{ transform: `translateX(-${320 * count}px)` }}>
           <li
             className="gallery__slide"
-            style={{ backgroundImage: `url(${galleryData && galleryData[1].url})` }}
+            style={{ background: "black"}}
           >
             {children}
           </li>

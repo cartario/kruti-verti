@@ -15,7 +15,7 @@ const Offers = ({data,title}) => {
   }
 
   const handleClickOnline = () => {
-    history.push('/p2')
+    history.push('/app')
   }
 
   return (

@@ -9,15 +9,15 @@ const MenuItems = [
   },
   {
     title: 'Предложения',
-    link: '/p1',
+    link: '/offers',
   },
   {
     title: 'Online',
-    link: '/p2',
+    link: '/app',
   },
   {
     title: 'Для студий',
-    link: '/p3',
+    link: '/b2b',
   },
   {
     title: 'Обратная связь',

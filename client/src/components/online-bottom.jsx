@@ -46,13 +46,13 @@ const BottomOnline = () => {
                   <a href="/">Главная</a>
                 </li>
                 <li>
-                  <a href="/p1">Предложения</a>
+                  <a href="/offers">Предложения</a>
                 </li>
                 <li>
-                  <a href="/p2">ONLINE</a>
+                  <a href="/app">ONLINE</a>
                 </li>
                 <li>
-                  <a href="/p3">Для студий</a>
+                  <a href="/b2b">Для студий</a>
                 </li>
                 <li>
                   <a href="/feedback">Обратная связь</a>

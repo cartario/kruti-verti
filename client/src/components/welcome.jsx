@@ -5,7 +5,7 @@ const WelcomeBlock = () => {
   const history = useHistory();
 
   const handleClick = () => {
-    history.push('/p2');
+    history.push('/app');
   };
 
   return (
