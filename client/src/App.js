@@ -72,7 +72,7 @@ function App() {
               muted
               playsInline
               loop
-              src="https://res.cloudinary.com/dxioiveim/video/upload/v1610217874/kruti-verti/shapes-mob_-_SD_480p_k3wxyp.mov"
+              src="https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423212/promoVideos/shapes-mob_-_SD_480p_k3wxyp_zh1hjt.mov"
             ></video>
           </Gallery>
 

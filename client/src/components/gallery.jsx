@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay = true }) => {
+  console.log(title)
   const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {
@@ -54,11 +55,11 @@ const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay =
               width="280"
               height="200"
               controls
-              autoPlay
+              autoPlay={false}
               muted
               playsInline
               loop
-              src="https://res.cloudinary.com/dxioiveim/video/upload/v1610393724/kruti-verti/%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D0%B8%CC%86_JeeFox_nlbtls.mp4"
+              src="https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612423238/promoVideos/JeeFox.mp4"
             ></video>
           </li>
 
@@ -77,6 +78,16 @@ const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay =
           <button onClick={handleIncrementCount}></button>
         </div>
       </div>
+      {title==='Залы' && <><p><b>Залы расположены:</b></p>
+      <ul style={{marginBottom: 20}}>
+        <li style={{margin: 10}}>м.Кузьминки, Текстильщики         
+        </li>
+        <li style={{margin: 10}}>м.Новокосино</li>
+        <li style={{margin: 10}}>м.Добрынинская, Серпуховская</li>
+        <li style={{margin: 10}}>м.Лермонтовский проспект</li>
+        <li style={{margin: 10}}>м.Автозаводская</li>
+      </ul></>
+      }
     </div>
   );
 };
