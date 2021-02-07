@@ -59,8 +59,10 @@ const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay =
               muted
               playsInline
               loop
-              src="https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612423238/promoVideos/JeeFox.mp4"
-            ></video>
+              src="https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612697300/promoVideos/jeefox-imovie_-_SD_480p_b1vyev.mov"
+            >
+              
+            </video>
           </li>
 
           <li

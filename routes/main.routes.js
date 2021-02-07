@@ -1,9 +1,17 @@
 const { Router } = require('express');
 const router = Router();
 const MainModel = require('../models/Main');
+const { check, validationResult } = require('express-validator');
 
 router.get('/score', async (req, res) => {
   try {    
+console.log('here')
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      res.status(400).json({ status: 'error', errors: errors.array() });
+      return;
+    }
+
     const score = await MainModel.findById("5ffbd3429d8fc612d08f8a24");
     
     // if (!eventId) {
