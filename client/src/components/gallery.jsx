@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay = true }) => {
-  console.log(title)
+  
   const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {

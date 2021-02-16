@@ -70,18 +70,34 @@ export const offersData = [
 
   {
     _id: '3',
-    name: 'Быстрый старт',
+    name: 'Express для взрослых',
     title: '+15 к опыту',
     description: '-Бесплатная подписка 1 мес -2 индивидуальных тренировки -6 новых элементов',
     imgUrl:
       'https://res.cloudinary.com/dwhyb2a2q/image/upload/v1612425770/offerPosters/maxresdefault_sx9gjd_ck1g1u.jpg',
-      price: '5499руб.',
-      pricePer: 'курс',
-       longTimeMonths: '1',
-       subscriptionFree: '1',
-       personalSessions: '2',
-       newElements: '6',
+      price: '3000руб.',
+      pricePer: 'со всей группы за 60 мин',
+       longTimeMonths: 'группу - 5 чел максимум',
+      //  subscriptionFree: '1',
+       personalSessions: '1',
+       newElements: '2',
+       type: 'group'
   },
+
+  // {
+  //   _id: '3',
+  //   name: 'Быстрый старт',
+  //   title: '+15 к опыту',
+  //   description: '-Бесплатная подписка 1 мес -2 индивидуальных тренировки -6 новых элементов',
+  //   imgUrl:
+  //     'https://res.cloudinary.com/dwhyb2a2q/image/upload/v1612425770/offerPosters/maxresdefault_sx9gjd_ck1g1u.jpg',
+  //     price: '5499руб.',
+  //     pricePer: 'курс',
+  //      longTimeMonths: '1',
+  //      subscriptionFree: '1',
+  //      personalSessions: '2',
+  //      newElements: '6',
+  // },
   {
     _id: '4',
     name: 'Онлайн: подписка на 1мес',
@@ -294,47 +310,47 @@ const sessions = [{
   _id: '1',
   title: "Indian step",
   backgroundColor: "purple",
-  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612423853/lessons/tutorials/tutorial-indian-step_g6mdfy.mp4",
-  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612424157/lessons/practice/indian-loop_od7vup_bazjgt.mp4",
+  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423853/lessons/tutorials/tutorial-indian-step_g6mdfy.mp4",
+  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424157/lessons/practice/indian-loop_od7vup_bazjgt.mp4",
 //   backgroundImage: bookImg
 },
 {
   _id: '2',
   title: "Sixstep",
   backgroundColor: "#1FA91C",
-  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612423850/lessons/tutorials/tutorial-sixstep_pnjarv.mp4",
-  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612423940/lessons/practice/training-sixstep_s45qti.mp4",
+  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423850/lessons/tutorials/tutorial-sixstep_pnjarv.mp4",
+  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423940/lessons/practice/training-sixstep_s45qti.mp4",
   // backgroundImage: bookImg
 },
 {
   _id: '3',
   title: "Swipes",
   backgroundColor: "#A91C82",
-  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612427797/lessons/tutorials/swipes-tut_iz7mlx_p8krey.mp4",
-  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612424134/lessons/practice/swipes-loop_p5cz3j_silxci.mp4",
+  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612427797/lessons/tutorials/swipes-tut_iz7mlx_p8krey.mp4",
+  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424134/lessons/practice/swipes-loop_p5cz3j_silxci.mp4",
   // backgroundImage: bookImg
 },
 {
   _id: '4',
   title: "CoffeeMill",
   backgroundColor: "#E86D14",
-  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612423778/lessons/tutorials/tutorial-coffemill_iixe26.mp4",
-  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612423950/lessons/practice/training-coffemill_g2mxyx.mp4",
+  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423778/lessons/tutorials/tutorial-coffemill_iixe26.mp4",
+  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423950/lessons/practice/training-coffemill_g2mxyx.mp4",
   // backgroundImage: bookImg
 },
 {
   _id: '5',
   title: "Baby Freeze",
   backgroundColor: "#25F0FD",
-  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612423780/lessons/tutorials/tutorial-baby_nxsdme.mp4",
-  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612423957/lessons/practice/training-baby_gvoyyf.mp4",
+  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423780/lessons/tutorials/tutorial-baby_nxsdme.mp4",
+  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423957/lessons/practice/training-baby_gvoyyf.mp4",
   // backgroundImage: bookImg
 },
 {
   _id: '6',
   title: "3-Step",
   backgroundColor: "#FF505A",
-  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612423933/lessons/practice/training-three_hz6wuw.mp4",
-  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612423933/lessons/practice/training-three_hz6wuw.mp4",
+  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423933/lessons/practice/training-three_hz6wuw.mp4",
+  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423933/lessons/practice/training-three_hz6wuw.mp4",
 }
 ];
