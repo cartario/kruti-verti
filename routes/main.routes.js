@@ -3,9 +3,26 @@ const router = Router();
 const MainModel = require('../models/Main');
 const { check, validationResult } = require('express-validator');
 
+router.get('/feedbacks', async(req, res)=>{ //TODO: добавить проверку авторизован ли пользователь
+  try{
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      res.status(400).json({ status: 'error', errors: errors.array() });
+      return;
+    }
+
+    const feedbacks = await MainModel.find({});
+
+    res.status(200).send({feedbacks})
+  }
+  catch(err){
+    res.status(500).send(err);
+  }
+})
+
 router.get('/score', async (req, res) => {
   try {    
-console.log('here')
+
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       res.status(400).json({ status: 'error', errors: errors.array() });

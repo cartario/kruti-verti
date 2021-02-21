@@ -12,33 +12,27 @@ const OfferPage = () => {
     .concat(offersDataForStudios)
     .find((offer) => offer._id === offerId);
   const {
-    name,
-    title,
-    description,
+    name,   
     imgUrl,
     price,
-    pricePer,
-    disabled,
+    pricePer,    
     subscriptionFree,
     personalSessions,
     newElements,
-    longTimeMonths,
-    type,
+    longTimeMonths,    
     onlineSessions,
   } = currentOffer;
 
   const handleClick = () => {
     history.goBack();
-  };
-
-  
+  };  
 
   return (
     <div className="offer-page">
       <p className="offer-page__nav" onClick={handleClick}>
         Назад
       </p>
-      <img width="200" src={imgUrl} />
+      <img width="200" src={imgUrl} alt='img'/>
       <h2>"{name}"</h2>
 
       <div>

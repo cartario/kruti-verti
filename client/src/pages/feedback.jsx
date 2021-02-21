@@ -1,7 +1,5 @@
 import React from 'react';
-import Offers from '../components/offers';
-import { offersDataForStudios } from '../mock';
-import { useParams, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import FeedbackComponent from '../components/feedback';
 
 const Feedback = () => {

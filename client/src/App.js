@@ -1,5 +1,4 @@
 import { Route } from 'react-router-dom';
-
 import './styles/index.scss';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
@@ -18,6 +17,7 @@ import WhatsApp from './components/whatsapp';
 import Page1 from './pages/page1';
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
+import Admin from './pages/admin';
 import FeedbackPage from './pages/feedback';
 import StartPage from './pages/start-page';
 import OfferPage from './pages/offer.jsx';
@@ -88,6 +88,7 @@ function App() {
         <Route path="/offers" exact component={Page1} />
         <Route path="/app" exact component={Page2} />
         <Route path="/b2b" exact component={Page3} />
+        <Route path="/admin" exact component={Admin} />
         <Route path="/feedback" exact component={FeedbackPage} />
         <Route path="/offer/:id">
           <OfferPage />

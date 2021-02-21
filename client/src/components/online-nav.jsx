@@ -1,8 +1,8 @@
 import React from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import { useHistory} from 'react-router-dom';
 
 const NavOnline = () => {
-  const pathname = window.location.pathname;  
+  
   const history = useHistory();
 
   const handleClick = () => {

@@ -1,9 +1,4 @@
-import coffeMillTrain from './media/online/training-coffemill.mp4';
-import coffeMillTutorial from './media/online/tutorial-coffemill.mp4';
-import babyTrain from './media/online/training-baby.mp4';
-import babyTutorial from './media/online/tutorial-baby.mp4';
-import threeTrain from './media/online/training-three.mp4';
-import threeTutorial from './media/online/tutorial-three.mp4';
+
 
 export const galleryData = [
   {

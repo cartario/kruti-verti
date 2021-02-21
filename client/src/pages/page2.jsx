@@ -1,15 +1,10 @@
 import React from 'react';
 import { sessions } from '../mock';
-import NavOnline from '../components/online-nav';
 import TopOnline from '../components/online-top';
 import BottomOnline from '../components/online-bottom';
 import Level from '../components/online-level';
 
-
 const ContentOnline = () => {
-
-
-
   return (
     <div className="online__content">
       <div className="online__container">
@@ -31,8 +26,7 @@ const OnlinePage = () => {
   },[]);
 
   return (
-    <div className="online">
-      {/* <NavOnline /> */}
+    <div className="online">      
       <TopOnline />
       <ContentOnline />
       <BottomOnline />      

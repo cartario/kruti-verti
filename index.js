@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const router = require('./routes/main.routes.js');
+const authRouter = require('./routes/user.routes.js');
+const lessonRouter = require('./routes/lesson.routes.js');
 const path = require('path');
 require('dotenv').config();
 
@@ -10,6 +12,8 @@ const mongoURI = process.env.mongoURI;
 app.use(express.json({extended: true}));
 
 app.use('/api/main', router);
+app.use('/api/user', authRouter);
+app.use('/api/lessons', lessonRouter);
 
 app.use('/', express.static(path.join(__dirname, 'client', 'build')));
 

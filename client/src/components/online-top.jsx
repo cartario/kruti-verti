@@ -1,16 +1,12 @@
 import React from 'react';
 import { Operations } from '../store/main/operations';
-import {ActionCreators} from '../store/main/actions';
 import { useDispatch, useSelector } from 'react-redux';
 import Dialog from '../components/material-dialog';
 import starImg from '../media/online/star.png';
 import eduImg from '../media/online/edu.png';
-import feedbackImg from '../media/online/feedback.png';
 import logoImg from '../media/logo.png';
 import infoImg from '../media/online/info.png';
 import Feedback from '../components/feedback';
-
-
 
 const TopOnline = () => {
   const dispatch = useDispatch();

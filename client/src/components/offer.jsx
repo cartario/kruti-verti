@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import starImg from '../media/star.png';
 
-export default function ({
+const Offer = ({
   _id,
   name,
   title,
@@ -17,7 +17,7 @@ export default function ({
   longTimeMonths,
   type,
   onlineSessions,
-}) {
+}) => {
   const history = useHistory();
 
   const handleClick = (_id) => {
@@ -92,3 +92,5 @@ export default function ({
     </article>
   );
 }
+
+export default Offer;
