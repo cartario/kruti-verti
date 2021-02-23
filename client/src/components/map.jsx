@@ -29,11 +29,11 @@ const MapBlock = () => {
           }}
           geometry={[55.704271, 37.666674]}           
           options={{ iconColor: 'green' }} onClick={()=>{}}/>
-          <Placemark 
+          {/* <Placemark 
           properties={{
             iconContent: 'UniverKids',
           }}
-          geometry={[55.755925, 37.883276]} options={{ iconColor: 'yellow' }} onClick={()=>{}}/>
+          geometry={[55.755925, 37.883276]} options={{ iconColor: 'yellow' }} onClick={()=>{}}/> */}
          
         </Map>
       </div>

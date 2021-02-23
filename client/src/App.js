@@ -21,6 +21,7 @@ import Admin from './pages/admin';
 import FeedbackPage from './pages/feedback';
 import StartPage from './pages/start-page';
 import OfferPage from './pages/offer.jsx';
+import DownloadAppPost from './components/downloadApp';
 import { galleryData, galleryPlaceData, offersData } from './mock';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/" exact>
           <Welcome />
           <SayHello />
+          <DownloadAppPost />
           <InfoMustHave />
           <Advantages />
           <PersonalKeyBlock />

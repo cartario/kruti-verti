@@ -20,6 +20,23 @@ router.get('/', async(req, res)=>{
   }
 });
 
+router.get('/:id', async(req, res)=>{ 
+  try{
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      res.status(400).json({ status: 'error', errors: errors.array() });
+      return;
+    }
+
+    const lesson = await LessonModel.findById(req.params.id);
+
+    res.status(200).send({lesson})
+  }
+  catch(err){
+    res.status(500).send(err);
+  }
+});
+
 router.post('/create', async(req, res)=>{
   try{
     const errors = validationResult(req);
@@ -28,10 +45,11 @@ router.post('/create', async(req, res)=>{
       return;
     }    
 
-    await LessonModel.create({...req.body});
+    const newLesson = await LessonModel.create({...req.body});
 
     res.status(200).send({
-      message: 'created successfully'
+      message: 'created successfully',
+      lessonId: newLesson.id
     })
   }
   catch(err){
@@ -59,7 +77,8 @@ router.delete('/:id', async (req, res)=>{
 
     await LessonModel.findByIdAndDelete(id);
     res.status(200).json({
-      message: 'deleted successfull'
+      message: 'deleted successfull',
+      lessonId: lesson.id
     })
 
   }

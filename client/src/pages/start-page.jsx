@@ -3,37 +3,37 @@ import { useHistory, useParams } from 'react-router-dom';
 import NavOnline from '../components/online-nav';
 import TopOnline from '../components/online-top';
 import BottomOnline from '../components/online-bottom';
-import { sessions } from '../mock';
-import {Operations} from '../store/main/operations';
+import {Operations} from '../store/lessons/operations';
 import {useDispatch, useSelector} from 'react-redux';
 
-
 const audioUrls= [
-  "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612424251/music/Erik_B._and_Rakim_-_Dont_Sweat_The_Technique_p29fmc_dvjeiw.mp3",
-  "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612424286/music/attache_-_bassbin_ballerina_ynsug5_cmsayb.mp3",
-  "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612424229/music/Boogie_Down_Productions_-_Jack_of_Spades_krcwtc_wfb7u6.mp3",
-  "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612424286/music/Show_A.G._-_Next_Level_l2ejyr_unjq90.mp3",
-  "https://res.cloudinary.com/dwhyb2a2q/video/upload/v1612424346/music/Fdel_-_Get_Up_On_Ya_Feet_w0v4i5_zyn1ii.mp3"
+  "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424251/music/Erik_B._and_Rakim_-_Dont_Sweat_The_Technique_p29fmc_dvjeiw.mp3",
+  "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424286/music/attache_-_bassbin_ballerina_ynsug5_cmsayb.mp3",
+  "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424229/music/Boogie_Down_Productions_-_Jack_of_Spades_krcwtc_wfb7u6.mp3",
+  "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424286/music/Show_A.G._-_Next_Level_l2ejyr_unjq90.mp3",
+  "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424346/music/Fdel_-_Get_Up_On_Ya_Feet_w0v4i5_zyn1ii.mp3"
 ];
 
 const RANDOM_AUDIO_URL = audioUrls[Math.floor(Math.random() * audioUrls.length)];
 
-const Result = () => {
+const Result = ({lessonId}) => {
   const dispatch = useDispatch();
-  const score = useSelector(({main})=>main.score);  
+  const lessons = useSelector(({lessons})=>lessons.items);  
+  const score = lessons.find((item)=>item._id===lessonId).score; 
+
   const history = useHistory();
   const INCREMENT_SCORES = {
     success: 12,
     fail: 10,
-  }
+  } 
 
   const handleSuccess = () => {
-    dispatch(Operations.setScore(Number(score) + INCREMENT_SCORES.success));
+    dispatch(Operations.setScore(lessonId, Number(score) + INCREMENT_SCORES.success));
     history.goBack();
   };
 
   const handleFail = () => {
-    dispatch(Operations.setScore(Number(score) + INCREMENT_SCORES.fail));
+    dispatch(Operations.setScore(lessonId, Number(score) + INCREMENT_SCORES.fail));
     history.go(0);
   };
 
@@ -121,9 +121,8 @@ const StartPage = () => {
   const [muted, setMuted] = React.useState(true);
   const videoRef = useRef();
   const audioRef = useRef();
-  const TRAINING_TIME = 60;
-
-  const currentSession = sessions.find((session) => session._id === id);
+  const TRAINING_TIME = 5;
+  const [currentSession, setCurrentSession] = React.useState();  
 
   const handleClose = () => {
     history.goBack();
@@ -139,13 +138,19 @@ const StartPage = () => {
     setMuted((prev) => !prev);    
   };
 
+  React.useEffect(async ()=>{
+    const response  = await fetch(`/api/lessons/${id}`);
+    const data = await response.json();
+    setCurrentSession(data.lesson);    
+  },[]);
+
   React.useEffect(() => {
     const navbarClose = document.querySelector('.navbar__close');
     navbarClose.classList.add('navbar__close--online');
 
     setTimeout(() => {
       setRuningTimer(true);
-    }, 5000);
+    }, 3000);
   }, []);
 
   React.useEffect(() => {
@@ -165,7 +170,9 @@ const StartPage = () => {
     }
   }, [runingTimer, muted]);
 
-
+  if(!currentSession){
+    return null;
+  }
 
   return (
     <div>
@@ -222,13 +229,13 @@ const StartPage = () => {
                   src={RANDOM_AUDIO_URL}
                 ></audio>
                 <video width="260" height="150" autoPlay loop muted playsInline ref={videoRef}>
-                  <source src={currentSession.trainingVideo} type="video/mp4" />
+                  <source src={currentSession.practiceUrl} type="video/mp4" />
                 </video>                
               </>
             ) : (
               <>
                 <div className="online__start-video-countdown">
-                  <Timer time={5} />
+                  <Timer time={3} />
                 </div>
                 <h3 className="online__start-video-letsgo">
                   Начинаем тренировку, повторяй за тренером
@@ -240,7 +247,7 @@ const StartPage = () => {
             {runingTimer && countTimer !== 0 && (
               <Timer time={TRAINING_TIME} handler={handleCountTimer} />
             )}
-            {countTimer === 0 && <Result />}
+            {countTimer === 0 && <Result lessonId={id}/>}
             <h3>{currentSession.title}</h3>
           </div>
         </div>

@@ -16,3 +16,15 @@ export const sayWelcome = () => {
   }
   return {name: 'Доброй ночи!', status: 0}
 };
+
+//оптимизурует запрос видео
+export const getOptimizedUrl = (url) => {
+  const targetUrl = url.split('/').filter((item) => item !== 'q_auto:low');
+
+  targetUrl.forEach((item, i) => {
+    if (item === 'upload') {
+      targetUrl[i] = 'upload/q_auto:low';
+    }
+  });
+  return targetUrl.join('/');
+};

@@ -1,5 +1,3 @@
-
-
 export const galleryData = [
   {
     url:
@@ -51,16 +49,16 @@ export const offersData = [
     _id: '1',
     name: 'Первые шаги',
     title: '+10 к опыту',
-   
+
     description: '-Бесплатная подписка 1 мес -1 индивидуальная тренировка -3 новых элемента',
     imgUrl:
       'https://res.cloudinary.com/dwhyb2a2q/image/upload/v1612425768/offerPosters/maxresdefault_1_k6acla_bwfpza.jpg',
-       price: '3000руб.',
-       pricePer: '60 мин',
-       longTimeMonths: null,
-       subscriptionFree: null,
-       personalSessions: '1',
-       newElements: '2',
+    price: '3000руб.',
+    pricePer: '60 мин',
+    longTimeMonths: null,
+    subscriptionFree: null,
+    personalSessions: '1',
+    newElements: '2',
   },
 
   {
@@ -70,13 +68,13 @@ export const offersData = [
     description: '-Бесплатная подписка 1 мес -2 индивидуальных тренировки -6 новых элементов',
     imgUrl:
       'https://res.cloudinary.com/dwhyb2a2q/image/upload/v1612425770/offerPosters/maxresdefault_sx9gjd_ck1g1u.jpg',
-      price: '3000руб.',
-      pricePer: 'со всей группы за 60 мин',
-       longTimeMonths: 'группу - 5 чел максимум',
-      //  subscriptionFree: '1',
-       personalSessions: '1',
-       newElements: '2',
-       type: 'group'
+    price: '3000руб.',
+    pricePer: 'со всей группы за 60 мин',
+    longTimeMonths: 'группу - 5 чел максимум',
+    //  subscriptionFree: '1',
+    personalSessions: '1',
+    newElements: '2',
+    type: 'group',
   },
 
   // {
@@ -100,13 +98,13 @@ export const offersData = [
     description: 'Доступ к обучающим видео в течении одного месяца',
     imgUrl:
       'https://res.cloudinary.com/dwhyb2a2q/image/upload/v1612425766/offerPosters/home2_cmpxqj_k8z2lx.jpg',
-      price: '500руб.',
-      pricePer: 'мес',
-       longTimeMonths: null,
-       subscriptionFree: null,
-       personalSessions: null,
-       newElements: null,
-       type: 'sub',
+    price: '500руб.',
+    pricePer: 'мес',
+    longTimeMonths: null,
+    subscriptionFree: null,
+    personalSessions: null,
+    newElements: null,
+    type: 'sub',
   },
   {
     _id: '5',
@@ -115,13 +113,13 @@ export const offersData = [
     description: 'Доступ к обучающим видео в течении трех месяцев',
     imgUrl:
       'https://res.cloudinary.com/dwhyb2a2q/image/upload/v1612425762/offerPosters/a14d5ebdd0eb7fcffef366dd02464041_y70rbk_v6hprf.jpg',
-      price: '1200 руб.',
-      pricePer: '3 мес',
-       longTimeMonths: null,
-       subscriptionFree: null,
-       personalSessions: null,
-       newElements: null,
-       type: 'sub',
+    price: '1200 руб.',
+    pricePer: '3 мес',
+    longTimeMonths: null,
+    subscriptionFree: null,
+    personalSessions: null,
+    newElements: null,
+    type: 'sub',
   },
   {
     _id: '6',
@@ -131,14 +129,13 @@ export const offersData = [
       '-Бесплатная подписка 1 мес -2 индивидуальных тренировки -6 новых элементов, 2 онлайн тренировки',
     imgUrl:
       'https://res.cloudinary.com/dwhyb2a2q/image/upload/v1612425768/offerPosters/fDyU09_tp7r3f_wphxtd.jpg',
-      price: '6500руб.',
-      pricePer: 'курс',
-       longTimeMonths: '1',
-       subscriptionFree: '1',
-       personalSessions: '3',
-       newElements: '6',
+    price: '6500руб.',
+    pricePer: 'курс',
+    longTimeMonths: '1',
+    subscriptionFree: '1',
+    personalSessions: '3',
+    newElements: '6',
     disabled: true,
-
   },
   {
     _id: '7',
@@ -147,12 +144,12 @@ export const offersData = [
     description: '-Бесплатная подписка 1 мес, 1 индивидуальная тренировка 60 мин',
     imgUrl:
       'https://res.cloudinary.com/dwhyb2a2q/image/upload/v1612425765/offerPosters/brakedance-1229045_1280_v8bi5z_cifajj.jpg',
-      price: '4000руб.',
-      pricePer: '90 мин',
-       longTimeMonths: null,
-       subscriptionFree: "1",
-       personalSessions: '1',
-       newElements: '3',
+    price: '4000руб.',
+    pricePer: '90 мин',
+    longTimeMonths: null,
+    subscriptionFree: '1',
+    personalSessions: '1',
+    newElements: '3',
   },
   {
     _id: '8',
@@ -162,13 +159,13 @@ export const offersData = [
       '-Бесплатная подписка 1 мес -1 индивидуальная тренировка -3 новых элемента, 1 онлайн тренировка',
     imgUrl:
       'https://res.cloudinary.com/dwhyb2a2q/image/upload/v1612425767/offerPosters/brakedance-1250354_1280_epy5yp_ozclut.jpg',
-      price: '4500руб.',
-      pricePer: 'курс',
-       longTimeMonths: "1",
-       subscriptionFree: null,
-       personalSessions: '1',
-       newElements: '2',
-       onlineSessions: '1'
+    price: '4500руб.',
+    pricePer: 'курс',
+    longTimeMonths: '1',
+    subscriptionFree: null,
+    personalSessions: '1',
+    newElements: '2',
+    onlineSessions: '1',
   },
   {
     _id: '9',
@@ -177,13 +174,13 @@ export const offersData = [
     description: 'Онлайн тренировка 60 мин. Подходит для тех кто уже знает базовые движения.',
     imgUrl:
       'https://res.cloudinary.com/dwhyb2a2q/image/upload/v1612425759/offerPosters/9261752e196565a7d40bdcfb8f257726d403088er1-750-469v2_hq_swqzuv_ct8uf6.jpg',
-      price: '800руб.',
-      pricePer: '45 мин',
-       longTimeMonths: null,
-       subscriptionFree: null,
-       personalSessions: null,
-       newElements: null,
-       type: 'online',
+    price: '800руб.',
+    pricePer: '45 мин',
+    longTimeMonths: null,
+    subscriptionFree: null,
+    personalSessions: null,
+    newElements: null,
+    type: 'online',
   },
   {
     _id: '10',
@@ -193,13 +190,13 @@ export const offersData = [
       'Групповое занятие  длится 60 мин. Необходимо предварительно уточнить свободные места.',
     imgUrl:
       'https://res.cloudinary.com/dwhyb2a2q/image/upload/v1612425767/offerPosters/girl-3691314_1920_ekqriv_swrwya.jpg',
-      price: 'Бесплатно',
-      pricePer: null,
-       longTimeMonths: null,
-       subscriptionFree: null,
-       personalSessions: null,
-       newElements: '3',
-       type: 'group',
+    price: 'Бесплатно',
+    pricePer: null,
+    longTimeMonths: null,
+    subscriptionFree: null,
+    personalSessions: null,
+    newElements: '3',
+    type: 'group',
   },
   {
     _id: '11',
@@ -209,13 +206,13 @@ export const offersData = [
       '-Бесплатная подписка 1 мес -8 групповых занятий по абонементу в течении 1 мес. Необходимо предварительно уточнить свободные места.',
     imgUrl:
       'https://res.cloudinary.com/dwhyb2a2q/image/upload/v1612425761/offerPosters/3637c326efa632fa85666a1d99257abf67cacb94r1-660-438v2_hq_jzid9f_ndyyoz.jpg',
-      price: '3600руб.',
-      pricePer: 'абонемент',
-       longTimeMonths: '1',
-       subscriptionFree: '1',
-       personalSessions: null,
-       newElements: '5',
-       type: 'group',
+    price: '3600руб.',
+    pricePer: 'абонемент',
+    longTimeMonths: '1',
+    subscriptionFree: '1',
+    personalSessions: null,
+    newElements: '5',
+    type: 'group',
   },
   {
     _id: '12',
@@ -225,13 +222,13 @@ export const offersData = [
       '-Бесплатная подписка 1 мес -4 индивидуальных тренировки -8 новых элементов, -4 онлайн тренировки',
     imgUrl:
       'https://res.cloudinary.com/dwhyb2a2q/image/upload/v1612425767/offerPosters/maxresdefault_2_b6q34d_fx4til.jpg',
-      price: '11000руб.',
-      pricePer: 'курс',
-       longTimeMonths: '2',
-       subscriptionFree: '2',
-       personalSessions: '4',
-       newElements: '8',
-       onlineSessions: '4',
+    price: '11000руб.',
+    pricePer: 'курс',
+    longTimeMonths: '2',
+    subscriptionFree: '2',
+    personalSessions: '4',
+    newElements: '8',
+    onlineSessions: '4',
     disabled: true,
   },
 ];
@@ -297,55 +294,64 @@ export const offersDataForStudios = [
   // },
 ];
 
-
-
-
-export 
-const sessions = [{
-  _id: '1',
-  title: "Indian step",
-  backgroundColor: "purple",
-  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423853/lessons/tutorials/tutorial-indian-step_g6mdfy.mp4",
-  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424157/lessons/practice/indian-loop_od7vup_bazjgt.mp4",
-//   backgroundImage: bookImg
-},
-{
-  _id: '2',
-  title: "Sixstep",
-  backgroundColor: "#1FA91C",
-  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423850/lessons/tutorials/tutorial-sixstep_pnjarv.mp4",
-  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423940/lessons/practice/training-sixstep_s45qti.mp4",
-  // backgroundImage: bookImg
-},
-{
-  _id: '3',
-  title: "Swipes",
-  backgroundColor: "#A91C82",
-  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612427797/lessons/tutorials/swipes-tut_iz7mlx_p8krey.mp4",
-  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424134/lessons/practice/swipes-loop_p5cz3j_silxci.mp4",
-  // backgroundImage: bookImg
-},
-{
-  _id: '4',
-  title: "CoffeeMill",
-  backgroundColor: "#E86D14",
-  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423778/lessons/tutorials/tutorial-coffemill_iixe26.mp4",
-  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423950/lessons/practice/training-coffemill_g2mxyx.mp4",
-  // backgroundImage: bookImg
-},
-{
-  _id: '5',
-  title: "Baby Freeze",
-  backgroundColor: "#25F0FD",
-  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423780/lessons/tutorials/tutorial-baby_nxsdme.mp4",
-  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423957/lessons/practice/training-baby_gvoyyf.mp4",
-  // backgroundImage: bookImg
-},
-{
-  _id: '6',
-  title: "3-Step",
-  backgroundColor: "#FF505A",
-  tutorialVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423933/lessons/practice/training-three_hz6wuw.mp4",
-  trainingVideo: "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423933/lessons/practice/training-three_hz6wuw.mp4",
-}
+export const sessions = [
+  {
+    _id: '1',
+    title: 'Indian step',
+    backgroundColor: 'purple',
+    tutorialVideo:
+      'https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423853/lessons/tutorials/tutorial-indian-step_g6mdfy.mp4',
+    trainingVideo:
+      'https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424157/lessons/practice/indian-loop_od7vup_bazjgt.mp4',
+    //   backgroundImage: bookImg
+  },
+  {
+    _id: '2',
+    title: 'Sixstep',
+    backgroundColor: '#1FA91C',
+    tutorialVideo:
+      'https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423850/lessons/tutorials/tutorial-sixstep_pnjarv.mp4',
+    trainingVideo:
+      'https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423940/lessons/practice/training-sixstep_s45qti.mp4',
+    // backgroundImage: bookImg
+  },
+  {
+    _id: '3',
+    title: 'Swipes',
+    backgroundColor: '#A91C82',
+    tutorialVideo:
+      'https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612427797/lessons/tutorials/swipes-tut_iz7mlx_p8krey.mp4',
+    trainingVideo:
+      'https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424134/lessons/practice/swipes-loop_p5cz3j_silxci.mp4',
+    // backgroundImage: bookImg
+  },
+  {
+    _id: '4',
+    title: 'CoffeeMill',
+    backgroundColor: '#E86D14',
+    tutorialVideo:
+      'https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423778/lessons/tutorials/tutorial-coffemill_iixe26.mp4',
+    trainingVideo:
+      'https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423950/lessons/practice/training-coffemill_g2mxyx.mp4',
+    // backgroundImage: bookImg
+  },
+  {
+    _id: '5',
+    title: 'Baby Freeze',
+    backgroundColor: '#25F0FD',
+    tutorialVideo:
+      'https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423780/lessons/tutorials/tutorial-baby_nxsdme.mp4',
+    trainingVideo:
+      'https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423957/lessons/practice/training-baby_gvoyyf.mp4',
+    // backgroundImage: bookImg
+  },
+  {
+    _id: '6',
+    title: '3-Step',
+    backgroundColor: '#FF505A',
+    tutorialVideo:
+      'https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423933/lessons/practice/training-three_hz6wuw.mp4',
+    trainingVideo:
+      'https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612423933/lessons/practice/training-three_hz6wuw.mp4',
+  },
 ];

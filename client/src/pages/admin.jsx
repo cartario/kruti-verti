@@ -30,7 +30,7 @@ const Admin = () => {
     if (data && data.token) {
       dispatch(ActionCreators.setAuth()); //TODO fix checking token
     }
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="admin">

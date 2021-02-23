@@ -1,5 +1,5 @@
 import React from 'react';
-import { Operations } from '../store/main/operations';
+import { Operations } from '../store/lessons/operations';
 import { useDispatch, useSelector } from 'react-redux';
 import Dialog from '../components/material-dialog';
 import starImg from '../media/online/star.png';
@@ -10,11 +10,11 @@ import Feedback from '../components/feedback';
 
 const TopOnline = () => {
   const dispatch = useDispatch();
-  const score = useSelector(({ main }) => main.score);
+  const score = useSelector(({ lessons }) => lessons.totalScore);
 
   React.useEffect(() => {
-    dispatch(Operations.fetchScore());
-  }, []);
+    dispatch(Operations.fetchLessons());
+  }, [dispatch]);
 
   return (
     <section className="online__top">

@@ -16,12 +16,10 @@ const Level = ({ title, sessions, disabled }) => {
               key={session.title}
               title={session.title}
               levelTitle={title}
-              tutorialVideo={session.tutorialVideo}
+              tutorialVideo={session.tutorialUrl}
+              score={session.score}
               id={session._id}
-              backgroundColor={session.backgroundColor}
-              backgroundImage={session.backgroundImage}
-              
-              
+              backgroundColor={'#' + Math.floor(Math.random()*16777215).toString(16)}              
             />
           ))}
       </ul>

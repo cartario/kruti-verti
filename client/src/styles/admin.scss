@@ -1,4 +1,4 @@
-.admin{
+.admin{  
   section {
     width: 70%;
     margin: 20px auto;
@@ -7,9 +7,53 @@
   }
 }
 
+.admin__modal {
+  position: fixed;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.admin__modal-content{
+  width: 600px;
+  min-height: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  background: white;
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+.admin__modal-content-close{
+  text-align: right;
+}
+
 .admin__section{
   h2{
     cursor: pointer;
+  }
+  h3{
+    margin: 0;
   }
 }
 
@@ -38,13 +82,24 @@
 .admin__section-item{
   display: flex;
   justify-content: space-between;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 0 5px;
   background: lightgrey;
+
+  p{
+    margin: 0;
+    
+  }
 }
 
 .admin__section-item-number{
   margin-right: 10px;
+}
+
+.admin__newItem-form{
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid green;
 }
 
 .admin__newItem-btn{
@@ -68,12 +123,17 @@
   }
 }
 
+.admin__newItem-btn-submit{
+  margin-top: 20px;
+}
+
 .admin__lessons{
   width: calc(100% - 20px);
   margin: 10px;  
 }
 
-.admin__lesson{  
+.admin__lesson{ 
+  position: relative; 
   background: lightblue;
   th, td{
     margin: 10px;
@@ -81,7 +141,8 @@
   }
 
   &:hover{
-    transform: scale(1.01);
+    // transform: scale(1.01);
+    background: rgb(134, 189, 189);
     transition: all 0.2s ease;
   }
 
@@ -91,7 +152,29 @@
   word-break: break-all;
 }
 
+.admin__lesson-controls-row{
+  
+}
 
+.admin__lesson-controls{ 
+  width: 80px;
+  display: flex;
+  justify-content: space-around;
+  svg {
+    width: 30px; 
+    cursor: pointer;
+    &:first-child:hover{
+      transform: rotate(180deg);
+      transition: 0.5s transform  ease;
+    }
+  }  
+}
+
+.admin__lesson-controls--edit{  
+  path{
+    fill: grey;
+  }  
+}
 
 .auth {  
   margin: 0 auto; 
