@@ -73,9 +73,7 @@ router.patch('/:lessonId', async(req, res)=>{ //TODO: добавить пров�
       return;
     }
 
-    const lessonId = req.params.lessonId;  
-    
-    console.log(req.body)
+    const lessonId = req.params.lessonId;   
 
     const score = await ScoreModel.find({lessonId});
     const id = score[0].id;   

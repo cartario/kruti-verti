@@ -41,8 +41,7 @@ const Controls = ({ lesson }) => {
     }
   };
 
-  const handleEdit = () => {
-    console.log('edit');
+  const handleEdit = () => {    
     setModal(true);
   };
 

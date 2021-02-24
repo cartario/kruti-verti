@@ -121,7 +121,7 @@ const StartPage = () => {
   const [currentSession, setCurrentSession] = React.useState();
 
   const {totalScore, items: lessons} = useSelector(({ lessons }) => lessons);  
-console.log(lessons)
+
   const userLevel = getUserLevel(totalScore, lessons);
 
   const handleClose = () => {    
