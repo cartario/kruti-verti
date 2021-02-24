@@ -8,14 +8,14 @@ import logoImg from '../media/logo.png';
 import infoImg from '../media/online/info.png';
 import Feedback from '../components/feedback';
 
-const TopOnline = () => {
+const TopOnline = ({userLevel}) => {
   const dispatch = useDispatch();
   const score = useSelector(({ lessons }) => lessons.totalScore);
 
   React.useEffect(() => {
     dispatch(Operations.fetchLessons());
   }, [dispatch]);
-
+  
   return (
     <section className="online__top">
       <div className="online__container">
@@ -28,7 +28,7 @@ const TopOnline = () => {
               title="Текущий уровень"
             >
               <img src={starImg} alt="online-img" />
-              <span>1</span>
+              <span>{userLevel}</span>
             </Dialog>
           </li>
           <li>

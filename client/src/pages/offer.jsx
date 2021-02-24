@@ -1,16 +1,32 @@
 import React from 'react';
 import { useParams, useHistory } from 'react-router-dom';
-import { offersData, offersDataForStudios } from '../mock';
 import starImg from '../media/star.png';
 import WhatsApp from '../components/whatsapp';
+import Loader from '../components/Loader';
 
-const OfferPage = () => {
- 
+const OfferPage = () => { 
   const offerId = useParams().id;
   const history = useHistory();
-  const currentOffer = offersData
-    .concat(offersDataForStudios)
-    .find((offer) => offer._id === offerId);
+  const [currentOffer, setCurrentOffer] = React.useState();
+
+  const handleClick = () => {
+    history.goBack();
+  }; 
+  
+  React.useEffect(()=>{
+    async function fetchData(){
+      const response = await fetch(`/api/offers/${offerId}`);
+      const data = await response.json();
+      
+      setCurrentOffer(data.offer);
+    }
+    fetchData();
+  },[offerId]);  
+
+  if(!currentOffer){
+    return <Loader />;
+  }
+
   const {
     name,   
     imgUrl,
@@ -22,10 +38,6 @@ const OfferPage = () => {
     longTimeMonths,    
     onlineSessions,
   } = currentOffer;
-
-  const handleClick = () => {
-    history.goBack();
-  };  
 
   return (
     <div className="offer-page">

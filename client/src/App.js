@@ -22,14 +22,16 @@ import FeedbackPage from './pages/feedback';
 import StartPage from './pages/start-page';
 import OfferPage from './pages/offer.jsx';
 import DownloadAppPost from './components/downloadApp';
-import { galleryData, galleryPlaceData, offersData } from './mock';
+import { galleryData, galleryPlaceData} from './mock';
 
 function App() {
   return (
     <div className="App">
       <div className="App__content">
         <Navbar />
+       
         <Route path="/" exact>
+        
           <Welcome />
           <SayHello />
           <DownloadAppPost />
@@ -55,16 +57,7 @@ function App() {
             colorTitle="white"
             galleryData={galleryData}
             autoPlay={false}
-          >
-            {/* <iframe
-              title="promo"
-              width="auto"
-              height="100%"
-              src="https://www.youtube.com/embed/kt-JEtc-WgI"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe> */}
+          >          
 
             <video
               width="280"
@@ -83,7 +76,7 @@ function App() {
             занятиях - развиваются социальные навыки и работа в команде.
           </QuoteBlock>
           <Gallery title="Залы" galleryData={galleryPlaceData} />
-          <Offers data={offersData} />
+          <Offers />
           <MapBlock />
           <WhatsApp />
         </Route>

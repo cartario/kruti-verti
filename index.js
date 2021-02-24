@@ -5,6 +5,7 @@ const router = require('./routes/main.routes.js');
 const authRouter = require('./routes/user.routes.js');
 const lessonRouter = require('./routes/lesson.routes.js');
 const scoreRouter = require('./routes/score.routes.js');
+const offersRouter = require('./routes/offer.routes.js');
 const path = require('path');
 require('dotenv').config();
 
@@ -16,6 +17,7 @@ app.use('/api/main', router);
 app.use('/api/user', authRouter);
 app.use('/api/lessons', lessonRouter);
 app.use('/api/scores', scoreRouter);
+app.use('/api/offers', offersRouter);
 
 app.use('/', express.static(path.join(__dirname, 'client', 'build')));
 

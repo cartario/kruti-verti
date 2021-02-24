@@ -1,6 +1,5 @@
 import React from 'react';
 import Offers from '../components/offers';
-import {offersDataForStudios} from '../mock';
 import { useHistory } from 'react-router-dom';
 
 const Page3 = () => {
@@ -13,10 +12,8 @@ const Page3 = () => {
     <div>
       <p className="offer-page__nav" onClick={handleClick}>
         Назад
-      </p>
-      
-      <Offers data={offersDataForStudios} title="для студий"/>
-      
+      </p>      
+      <Offers title="для студий"/>      
     </div>
   );
 };

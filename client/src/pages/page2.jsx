@@ -4,31 +4,12 @@ import BottomOnline from '../components/online-bottom';
 import Level from '../components/online-level';
 import { useSelector, useDispatch } from 'react-redux';
 import { Operations } from '../store/lessons/operations';
+import Loader from '../components/Loader';
+import {getUserLevel} from '../utils';
 
-const getUserLevel = (totalScore = 0, lessons) => {
-  const MAX_SCORE_LESSON = 60;
-
-  switch(true){
-    case totalScore>4*60:
-      return 3;
-    case totalScore>2*60:
-      return 2;
-    default:
-      return 1;
-  }
-}
-
-const ContentOnline = () => {
-  const {items: lessons, totalScore} = useSelector(({ lessons }) => lessons);
-  const dispatch = useDispatch();
-
+const ContentOnline = ({userLevel, lessons}) => {
   const levels = [...new Set(lessons.map((item) => item.level))];
-  const userLevel = getUserLevel(totalScore);
-
-  React.useEffect(() => {
-    dispatch(Operations.fetchLessons());
-  }, [dispatch]);
-
+  
   return (
     <div className="online__content">
       <div className="online__container">
@@ -47,15 +28,28 @@ const ContentOnline = () => {
 };
 
 const OnlinePage = () => {
+  const {items: lessons, totalScore} = useSelector(({ lessons }) => lessons);
+  const dispatch = useDispatch();
+
+  const userLevel = getUserLevel(totalScore, lessons);  
+
   React.useEffect(() => {
     const navbarClose = document.querySelector('.navbar__close');
     navbarClose.setAttribute('style', 'display:none');
   }, []);
 
+  React.useEffect(() => {
+    dispatch(Operations.fetchLessons());
+  }, [dispatch]);
+
+  if(!totalScore ||!lessons){
+    return <Loader/>
+  }
+
   return (
     <div className="online">
-      <TopOnline />
-      <ContentOnline />
+      <TopOnline userLevel={userLevel}/>
+      <ContentOnline userLevel={userLevel} lessons={lessons}/>
       <BottomOnline />
     </div>
   );

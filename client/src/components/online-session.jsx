@@ -1,7 +1,6 @@
 import React from 'react';
 import PopupMaterial from './popupMaterial';
 import Popup from './online-popup';
-import { useSelector } from 'react-redux';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 const MAX_SCORE = 60;
@@ -14,8 +13,7 @@ const Session = ({
   levelTitle,
   backgroundColor, 
   tutorialVideo,
-}) => {
-  
+}) => {  
   
   const [open, setOpen] = React.useState(false);
   

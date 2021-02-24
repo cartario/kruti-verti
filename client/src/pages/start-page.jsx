@@ -5,14 +5,10 @@ import TopOnline from '../components/online-top';
 import BottomOnline from '../components/online-bottom';
 import {Operations} from '../store/lessons/operations';
 import {useDispatch, useSelector} from 'react-redux';
+import Loader from '../components/Loader';
+import {getUserLevel} from '../utils';
+import {audioUrls} from '../mock';
 
-const audioUrls= [
-  "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424251/music/Erik_B._and_Rakim_-_Dont_Sweat_The_Technique_p29fmc_dvjeiw.mp3",
-  "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424286/music/attache_-_bassbin_ballerina_ynsug5_cmsayb.mp3",
-  "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424229/music/Boogie_Down_Productions_-_Jack_of_Spades_krcwtc_wfb7u6.mp3",
-  "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424286/music/Show_A.G._-_Next_Level_l2ejyr_unjq90.mp3",
-  "https://res.cloudinary.com/dwhyb2a2q/video/upload/q_auto:low/v1612424346/music/Fdel_-_Get_Up_On_Ya_Feet_w0v4i5_zyn1ii.mp3"
-];
 
 const RANDOM_AUDIO_URL = audioUrls[Math.floor(Math.random() * audioUrls.length)];
 
@@ -121,11 +117,17 @@ const StartPage = () => {
   const [muted, setMuted] = React.useState(true);
   const videoRef = useRef();
   const audioRef = useRef();
-  const TRAINING_TIME = 5;
-  const [currentSession, setCurrentSession] = React.useState();  
+  const TRAINING_TIME = 60;
+  const [currentSession, setCurrentSession] = React.useState();
 
-  const handleClose = () => {
-    history.goBack();
+  const {totalScore, items: lessons} = useSelector(({ lessons }) => lessons);  
+console.log(lessons)
+  const userLevel = getUserLevel(totalScore, lessons);
+
+  const handleClose = () => {    
+    if(window.confirm('Уже сдаешься?')){
+      history.goBack();
+    }   
   };
 
   const handleCountTimer = (value) => {
@@ -138,11 +140,14 @@ const StartPage = () => {
     setMuted((prev) => !prev);    
   };
 
-  React.useEffect(async ()=>{
-    const response  = await fetch(`/api/lessons/${id}`);
-    const data = await response.json();
-    setCurrentSession(data.lesson);    
-  },[]);
+  React.useEffect(()=>{
+    async function fetchData(){
+      const response  = await fetch(`/api/lessons/${id}`);
+      const data = await response.json();
+      setCurrentSession(data.lesson);  
+    }
+    fetchData();
+  },[id]);
 
   React.useEffect(() => {
     const navbarClose = document.querySelector('.navbar__close');
@@ -171,13 +176,13 @@ const StartPage = () => {
   }, [runingTimer, muted]);
 
   if(!currentSession){
-    return null;
+    return <Loader />;
   }
 
   return (
     <div>
       <NavOnline />
-      <TopOnline />
+      <TopOnline userLevel={userLevel}/>
       <section className="online__start">
         <div className="online__container">
           <div className="online__start-video">
