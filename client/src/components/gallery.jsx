@@ -84,7 +84,7 @@ const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay =
       <ul style={{marginBottom: 20}}>
         <li style={{margin: 10}}>м.Кузьминки, Текстильщики         
         </li>
-        <li style={{margin: 10}}>м.Новокосино</li>
+        {/* <li style={{margin: 10}}>м.Новокосино</li> */}
         <li style={{margin: 10}}>м.Добрынинская, Серпуховская</li>
         <li style={{margin: 10}}>м.Лермонтовский проспект</li>
         <li style={{margin: 10}}>м.Автозаводская</li>
