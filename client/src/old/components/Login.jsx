@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import classnames from 'classnames';
-import {Operations} from '../store/user/operations';
+import {Operations} from '../../store/user/operations';
 
 const schema = yup.object().shape({
   email: yup.string().email().required('email обязательное поле'),

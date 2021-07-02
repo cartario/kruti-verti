@@ -3,11 +3,11 @@ import { useHistory, useParams } from 'react-router-dom';
 import NavOnline from '../components/online-nav';
 import TopOnline from '../components/online-top';
 import BottomOnline from '../components/online-bottom';
-import {Operations} from '../store/lessons/operations';
+import {Operations} from '../../store/lessons/operations';
 import {useDispatch, useSelector} from 'react-redux';
 import Loader from '../components/Loader';
-import {getUserLevel} from '../utils';
-import {audioUrls} from '../mock';
+import {getUserLevel} from '../../utils';
+import {audioUrls} from '../../mock';
 
 
 const RANDOM_AUDIO_URL = audioUrls[Math.floor(Math.random() * audioUrls.length)];

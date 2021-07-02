@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { ActionCreators } from '../store/user/actions';
+import { ActionCreators } from '../../store/user/actions';
 import Login from '../components/Login';
 import Loader from '../components/Loader';
 import AdminSection from '../components/admin/section';

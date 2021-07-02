@@ -1,6 +1,6 @@
 import React from 'react';
-import { Operations } from '../store/main/operations';
-import {ActionCreators} from '../store/main/actions';
+import { Operations } from '../../store/main/operations';
+import {ActionCreators} from '../../store/main/actions';
 import { useDispatch, useSelector } from 'react-redux';
 
 const Feedback = () => {

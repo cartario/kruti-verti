@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../media/advantages-freeze.png';
+import img from '../../media/advantages-freeze.png';
 
 const Advantages = () => {
   return (

@@ -3,9 +3,9 @@ import TopOnline from '../components/online-top';
 import BottomOnline from '../components/online-bottom';
 import Level from '../components/online-level';
 import { useSelector, useDispatch } from 'react-redux';
-import { Operations } from '../store/lessons/operations';
+import { Operations } from '../../store/lessons/operations';
 import Loader from '../components/Loader';
-import {getUserLevel} from '../utils';
+import {getUserLevel} from '../../utils';
 
 const ContentOnline = ({userLevel, lessons}) => {
   const levels = [...new Set(lessons.map((item) => item.level))];

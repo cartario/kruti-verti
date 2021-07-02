@@ -1,11 +1,11 @@
 import React from 'react';
-import { Operations } from '../store/lessons/operations';
+import { Operations } from '../../store/lessons/operations';
 import { useDispatch, useSelector } from 'react-redux';
 import Dialog from '../components/material-dialog';
-import starImg from '../media/online/star.png';
-import eduImg from '../media/online/edu.png';
-import logoImg from '../media/logo.png';
-import infoImg from '../media/online/info.png';
+import starImg from '../../media/online/star.png';
+import eduImg from '../../media/online/edu.png';
+import logoImg from '../../media/logo.png';
+import infoImg from '../../media/online/info.png';
 import Feedback from '../components/feedback';
 
 const TopOnline = ({userLevel}) => {

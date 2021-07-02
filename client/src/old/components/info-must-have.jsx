@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from '../media/info-mh1.png';
-import img2 from '../media/info-mh2.png';
-import img3 from '../media/info-mh3.png';
+import img1 from '../../media/info-mh1.png';
+import img2 from '../../media/info-mh2.png';
+import img3 from '../../media/info-mh3.png';
 
 const InfoMustHave = () => {
   return (

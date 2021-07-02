@@ -13,7 +13,7 @@ const WelcomeBlock = () => {
       <div className="welcome__overlay overlay">
         <div className="row">
           <div className="col col-75">
-            <h1>KRUTI-VERTI</h1>
+            <h1>KRUTI-VERTI2</h1>
             <h4>
               Прогрессивные, безопасные, индивидуальные и групповые тренировки по
               брейкингу(брейк-данс) для детей разного уровня подготовки в онлайн/оффлайн формате

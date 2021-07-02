@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Operations } from '../../store/main/operations';
+import { Operations } from '../../../store/main/operations';
 
 const AdminSection = ({title, children}) => {
   const { isLoaded } = useSelector(({ main }) => main);

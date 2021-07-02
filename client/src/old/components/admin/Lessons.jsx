@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Operations } from '../../store/lessons/operations';
+import { Operations } from '../../../store/lessons/operations';
 import AdminNewItem from '../admin/NewItem';
 import Player from '../admin/Player';
 import AdminLessonControls from '../admin/LessonControl';

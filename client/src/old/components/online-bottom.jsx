@@ -1,9 +1,9 @@
 import React from 'react';
 import Dialog from '../components/material-dialog';
-import bookImg from '../media/online/book.png';
-import userImg from '../media/online/user.png';
-import ratingImg from '../media/online/rating.png';
-import menuImg from '../media/online/menu.jpg';
+import bookImg from '../../media/online/book.png';
+import userImg from '../../media/online/user.png';
+import ratingImg from '../../media/online/rating.png';
+import menuImg from '../../media/online/menu.jpg';
 
 const BottomOnline = () => {
   return (

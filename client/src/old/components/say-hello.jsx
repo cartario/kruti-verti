@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { sayWelcome } from '../utils';
+import { sayWelcome } from '../../utils';
 
 const SayHello = () => {
   const dayStatus = sayWelcome();

@@ -1,5 +1,5 @@
 import { Route } from 'react-router-dom';
-import './styles/index.scss';
+import '../styles/index.scss';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Welcome from './components/welcome';
@@ -22,7 +22,7 @@ import FeedbackPage from './pages/feedback';
 import StartPage from './pages/start-page';
 import OfferPage from './pages/offer.jsx';
 import DownloadAppPost from './components/downloadApp';
-import { galleryData, galleryPlaceData} from './mock';
+import { galleryData, galleryPlaceData} from '../mock';
 
 function App() {
   return (

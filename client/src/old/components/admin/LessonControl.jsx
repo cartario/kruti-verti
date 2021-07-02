@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { Operations } from '../../store/lessons/operations';
+import { Operations } from '../../../store/lessons/operations';
 
 const Controls = ({ lesson }) => {
   const initialState = {    

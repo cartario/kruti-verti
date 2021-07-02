@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useHistory } from 'react-router-dom';
-import starImg from '../media/star.png';
+import starImg from '../../media/star.png';
 import WhatsApp from '../components/whatsapp';
 import Loader from '../components/Loader';
 

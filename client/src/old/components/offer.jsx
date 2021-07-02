@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import starImg from '../media/star.png';
+import starImg from '../../media/star.png';
 
 const Offer = ({
   _id,

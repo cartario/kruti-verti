@@ -1,9 +1,9 @@
 import React from 'react';
-import meteorImg from '../media/meteor.png';
-import child1 from '../media/personal-key-img1.png';
-import child2 from '../media/personal-key-img2.png';
-import child3 from '../media/personal-key-img3.png';
-import exitImg from '../media/personal-key-exit.png';
+import meteorImg from '../../media/meteor.png';
+import child1 from '../../media/personal-key-img1.png';
+import child2 from '../../media/personal-key-img2.png';
+import child3 from '../../media/personal-key-img3.png';
+import exitImg from '../../media/personal-key-exit.png';
 
 const PersonalKeyBlock = () => {
   return (
