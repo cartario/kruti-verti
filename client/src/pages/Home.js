@@ -1,6 +1,7 @@
 import React from 'react';
 import {Welcome, SayHello, DownloadApp, InfoMustHave, Advantages, PersonalKeyBlock, TimeBlock, Quote, Coach, Gallery, Offers, Map,WhatsApp} from '../components';
 import { galleryData} from '../mock';
+import lang from '../data';
 
 const HomePage = () => {
   return(
@@ -13,15 +14,15 @@ const HomePage = () => {
       <PersonalKeyBlock />
       <TimeBlock />
       <Quote 
-        text="@Крути-верти - безопасно делать и быстро расти!">
-        Для занятий не требуется специальный реквизит - достаточно базовых фундаментальных
-        движений +<br />
-        <span style={{ color: '#5A1CA9' }}>мотивация</span>
+        text={lang(['quotes', 'intro'])}>
+       
         <br />
-        <span style={{ color: '#02FF86' }}>настойчивость</span>
+        <span style={{ color: '#5A1CA9' }}>{lang(['quotes', '1', 'arg1'])}</span>
         <br />
-        <span style={{ color: '#FFE700' }}>собственное воображение</span>
-        <br /> - и вот вы уже создаете свою вселенную
+        <span style={{ color: '#02FF86' }}>{lang(['quotes', '1', 'arg2'])}</span>
+        <br />
+        <span style={{ color: '#FFE700' }}>{lang(['quotes', '1', 'arg3'])}</span>
+        <br /> {lang(['quotes', '1', 'arg4'])}
       </Quote>
       <Coach />
       <Gallery

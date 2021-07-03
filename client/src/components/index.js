@@ -12,6 +12,6 @@ export {default as Quote} from './Quote-block';
 export {default as SayHello} from './Say-hello';
 export {default as ShowMore} from './Show-more';
 export {default as TimeBlock} from './Time-block';
-export {default as Welcome} from './Welcome';
+export {default as Welcome} from './Welcome/Welcome';
 export {default as WhatsApp} from './Whatsapp';
 export {default as Footer} from './Footer';

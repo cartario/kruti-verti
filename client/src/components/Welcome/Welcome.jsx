@@ -1,11 +1,17 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import {useDispatch, useSelector} from 'react-redux';
+import {selectValue, increment} from './welcomeSlice';
 
 const WelcomeBlock = () => {
   const history = useHistory();
+  const dispatch = useDispatch();
+  const valueStore = useSelector(selectValue);
 
   const handleClick = () => {
-    history.push('/app');
+    // history.push('/app');
+    console.log(valueStore, history);
+    dispatch(increment());
   };
 
   return (
