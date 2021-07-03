@@ -1,1 +1,17 @@
 export {default as Navbar} from './Navbar';
+export {default as Advantages} from './Advantages';
+export {default as Coach} from './Coach';
+export {default as DownloadApp} from './DownloadApp';
+export {default as Gallery} from './Gallery';
+export {default as InfoMustHave} from './Info-must-have';
+export {default as Map} from './Map';
+export {default as Offers} from './Offers';
+export {default as Offer} from './Offer';
+export {default as PersonalKeyBlock} from './Personal-key-block';
+export {default as Quote} from './Quote-block';
+export {default as SayHello} from './Say-hello';
+export {default as ShowMore} from './Show-more';
+export {default as TimeBlock} from './Time-block';
+export {default as Welcome} from './Welcome';
+export {default as WhatsApp} from './Whatsapp';
+export {default as Footer} from './Footer';
