@@ -5,9 +5,12 @@ const Gallery = ({ title, bgColor, colorTitle, galleryData, children, autoPlay =
   const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {
+    let increment;
     if (autoPlay) {
-      setInterval(handleIncrementCount, 3000 * (1 + Math.random()));
+      increment = setInterval(handleIncrementCount, 3000 * (1 + Math.random()));
     }
+
+    return ()=>clearInterval(increment);
   }, [autoPlay]);
 
   const handleIncrementCount = () => {

@@ -3,6 +3,11 @@ import { useHistory } from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
 import {selectValue, increment} from './welcomeSlice';
 
+
+import {Button, Typography} from '@material-ui/core';
+
+
+
 const WelcomeBlock = () => {
   const history = useHistory();
   const dispatch = useDispatch();
@@ -20,6 +25,12 @@ const WelcomeBlock = () => {
         <div className="row">
           <div className="col col-75">
             <h1>KRUTI-VERTI2</h1>
+
+            <Button variant='contained' color="primary" disableElevation>
+              Disable elevation
+            </Button>
+            <Typography variant='body1'>test text</Typography>
+
             <h4>
               Прогрессивные, безопасные, индивидуальные и групповые тренировки по
               брейкингу(брейк-данс) для детей разного уровня подготовки в онлайн/оффлайн формате
