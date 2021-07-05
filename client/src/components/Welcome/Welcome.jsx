@@ -30,6 +30,7 @@ const WelcomeBlock = () => {
               Disable elevation
             </Button>
             <Typography variant='body1'>test text</Typography>
+            <Typography variant='body1'>test text</Typography>
 
             <h4>
               Прогрессивные, безопасные, индивидуальные и групповые тренировки по
