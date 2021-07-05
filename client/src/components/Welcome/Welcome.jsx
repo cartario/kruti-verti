@@ -29,7 +29,7 @@ const WelcomeBlock = () => {
             <Button variant='contained' color="primary" disableElevation>
               Disable elevation
             </Button>
-            <Typography variant='body1'>test text</Typography>
+            <Typography variant='body1'>welcome test</Typography>
 
             <h4>
               Прогрессивные, безопасные, индивидуальные и групповые тренировки по
